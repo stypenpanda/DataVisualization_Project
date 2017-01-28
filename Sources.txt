@@ -1,0 +1,3 @@
+Quick re-cap and intro:
+https://github.com/curran/screencasts/tree/gh-pages/introToD3
+
