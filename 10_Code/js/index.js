@@ -1,15 +1,25 @@
+//Generate dropdown list
+var select = '';
+for (i=1980;i<=2013;i++){
+	select += '<option val=' + i + '>' + i + '</option>';
+}
+$('#year_selector').html(select);
+//TODO: Think about a slider instead ...
+
+
+
 //Set the margins
-var outerWidth = 500;
-var outerHeight = 250;
-var margin = { left: 130, top: 0, right: 0, bottom: 30 };
+var outerWidth = 400;
+var outerHeight = 400;
+var margin = { left: 200, top: 0, right: 5, bottom: 30 };
 var barPadding = 0.2;
 
 var innerWidth  = outerWidth  - margin.left - margin.right;
 var innerHeight = outerHeight - margin.top  - margin.bottom;
 
 //Top yearly movements as barcharts
-var xColumn = "People";
-var yColumn = "Movement";
+var xColumn = "Migrants";
+var yColumn = "Flow";
 
 var svg = d3.select("body").append("svg")
 .attr("width",  outerWidth)
@@ -22,6 +32,7 @@ var xAxisG = g.append("g")
 var yAxisG = g.append("g")
 .attr("class", "y axis");
 
+var maxMigrationCtryToCtry;
 var xScale = d3.scale.linear().range(      [0, innerWidth]);
 var yScale = d3.scale.ordinal().rangeBands([0, innerHeight], barPadding);
 
@@ -34,7 +45,8 @@ var yAxis = d3.svg.axis().scale(yScale).orient("left")
 
 function render(data){
   //adjust axes
-  xScale.domain([0, d3.max(data, function (d){ return d[xColumn]; })]);
+  xScale.domain([0, maxMigrationCtryToCtry//d3.max(data, function (d){ return d[xColumn]; })
+				]);
   yScale.domain(       data.map( function (d){ return d[yColumn]; }));
   xAxisG.call(xAxis);
   yAxisG.call(yAxis);
@@ -44,7 +56,7 @@ function render(data){
   bars.enter().append("rect")
     .attr("height", yScale.rangeBand())
     .attr("fill", "grey");
-  //update
+  //update //TOCHECK: probably include exit in update!!!
   bars
     .attr("x", 0)
     .attr("y",     function (d){ return yScale(d[yColumn]); })
@@ -52,34 +64,37 @@ function render(data){
   //exit
   bars.exit().remove();
 }
+var dropdown = document.getElementById("year_selector");
 
 
+//Load and plot initial selection
 function type(d){
-  d.population = +d.population;
-  return d;
-}
+	d["Year"] = +d["Year"];
+	d["Migrants"] = +d["Migrants"];
+	return d;
+	}
 
-var testdata = [{"Movement": "SYDE",
-        "People": 4000000,
-        "Year": 1983},
-       {"Movement": "Buenos Aires",
-        "People": 13076300,
-        "Year": 1982},
-       {"Movement": "Mumbai",
-        "People": 12691836,
-        "Year": 1984}];
+var a = +dropdown.options[dropdown.selectedIndex].value;
+var dMigPerCtry, dCurrentSelection;
 
+//Load initial data
+d3.csv("MigrationPerCountry_Top10.csv", type, function(d) {
+		//Filter for respective year
+		dMigPerCtry = d;
+		maxMigrationCtryToCtry = d3.max(d, function (d){ return d[xColumn]; })
+		dCurrentSelection = d.filter(function(data){
+			return  data["Year"] === a;
+			});
+		render(dCurrentSelection);
+	});
 
-//select initial selected data
-render(testdata.filter(function(d){
-    var x = document.getElementById("year");
-    var a = x.options[x.selectedIndex].value;
-    return d["Year"] <= a;}))
 
 //Update graph when dropdown changes due to changes in selected data
-d3.select('#year')
+d3.select('#year_selector')
   .on('change', function() {
-    var a = eval(d3.select(this).property('value'));
-    var dataUpdate = testdata.filter(function(d) {return d["Year"] <= a})
-    render(dataUpdate);
-});
+    a = +eval(d3.select(this).property('value'));
+    dCurrentSelection = dMigPerCtry.filter(function(data){
+			return  data["Year"] === a;
+			});
+	render(dCurrentSelection)
+	});

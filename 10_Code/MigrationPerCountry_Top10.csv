@@ -1,0 +1,341 @@
+Country,Type,Coverage,OdName,Year,Migrants,Flow
+Germany,Immigrants,Both,Turkey,1980,213126,Turkey - Germany
+Germany,Immigrants,Both,Italy,1980,88865,Italy - Germany
+Germany,Immigrants,Both,Poland,1980,67940,Poland - Germany
+United States,Immigrants,Foreigners,Mexico,1980,56680,Mexico - United States
+Australia,Immigrants,Both,United Kingdom,1980,43540,United Kingdom - Australia
+United States,Immigrants,Foreigners,Vietnam,1980,43483,Vietnam - United States
+United States,Immigrants,Foreigners,Philippines,1980,42316,Philippines - United States
+Australia,Immigrants,Both,New Zealand,1980,34370,New Zealand - Australia
+United States,Immigrants,Foreigners,"Korea, Rep.",1980,32320,"Korea, Rep. - United States"
+Germany,Immigrants,Both,Austria,1980,27849,Austria - Germany
+Germany,Immigrants,Both,Poland,1981,135278,Poland - Germany
+United States,Immigrants,Foreigners,Mexico,1981,101268,Mexico - United States
+Germany,Immigrants,Both,Turkey,1981,84711,Turkey - Germany
+Germany,Immigrants,Both,Italy,1981,67567,Italy - Germany
+Australia,Immigrants,Both,United Kingdom,1981,57050,United Kingdom - Australia
+United States,Immigrants,Foreigners,Vietnam,1981,55631,Vietnam - United States
+United States,Immigrants,Foreigners,Philippines,1981,43772,Philippines - United States
+Italy,Immigrants,Both,Switzerland,1981,37174,Switzerland - Italy
+Australia,Immigrants,Both,New Zealand,1981,34440,New Zealand - Australia
+United States,Immigrants,Foreigners,"Korea, Rep.",1981,32663,"Korea, Rep. - United States"
+United States,Immigrants,Foreigners,Vietnam,1982,72553,Vietnam - United States
+Germany,Immigrants,Both,Poland,1982,58786,Poland - Germany
+United States,Immigrants,Foreigners,Mexico,1982,56106,Mexico - United States
+Australia,Immigrants,Both,United Kingdom,1982,51730,United Kingdom - Australia
+United States,Immigrants,Foreigners,Philippines,1982,45102,Philippines - United States
+Germany,Immigrants,Both,Italy,1982,43834,Italy - Germany
+Germany,Immigrants,Both,Turkey,1982,43140,Turkey - Germany
+United States,Immigrants,Foreigners,Lao PDR,1982,36528,Lao PDR - United States
+United States,Immigrants,Foreigners,"Korea, Rep.",1982,31724,"Korea, Rep. - United States"
+United States,Immigrants,Foreigners,China,1982,27100,China - United States
+United States,Immigrants,Foreigners,Mexico,1983,59079,Mexico - United States
+Germany,Immigrants,Both,Poland,1983,55525,Poland - Germany
+United States,Immigrants,Foreigners,Philippines,1983,41546,Philippines - United States
+Germany,Immigrants,Both,Italy,1983,38491,Italy - Germany
+United States,Immigrants,Foreigners,Vietnam,1983,37560,Vietnam - United States
+United States,Immigrants,Foreigners,"Korea, Rep.",1983,33339,"Korea, Rep. - United States"
+Australia,Immigrants,Both,United Kingdom,1983,31660,United Kingdom - Australia
+Germany,Immigrants,Both,Turkey,1983,28345,Turkey - Germany
+United States,Immigrants,Foreigners,China,1983,25777,China - United States
+United States,Immigrants,Foreigners,India,1983,25451,India - United States
+Germany,Immigrants,Both,Poland,1984,82433,Poland - Germany
+United States,Immigrants,Foreigners,Mexico,1984,57557,Mexico - United States
+United States,Immigrants,Foreigners,Philippines,1984,42768,Philippines - United States
+Germany,Immigrants,Both,Italy,1984,40238,Italy - Germany
+United States,Immigrants,Foreigners,Vietnam,1984,37236,Vietnam - United States
+Germany,Immigrants,Both,Turkey,1984,34647,Turkey - Germany
+United States,Immigrants,Foreigners,"Korea, Rep.",1984,33042,"Korea, Rep. - United States"
+Australia,Immigrants,Both,United Kingdom,1984,25150,United Kingdom - Australia
+United States,Immigrants,Foreigners,India,1984,24964,India - United States
+Germany,Immigrants,Both,United States,1984,24172,United States - Germany
+Germany,Immigrants,Both,Poland,1985,89686,Poland - Germany
+United States,Immigrants,Foreigners,Mexico,1985,61077,Mexico - United States
+Germany,Immigrants,Both,Turkey,1985,48095,Turkey - Germany
+United States,Immigrants,Foreigners,Philippines,1985,47978,Philippines - United States
+Germany,Immigrants,Both,Italy,1985,41948,Italy - Germany
+United States,Immigrants,Foreigners,"Korea, Rep.",1985,35253,"Korea, Rep. - United States"
+United States,Immigrants,Foreigners,Vietnam,1985,31895,Vietnam - United States
+Australia,Immigrants,Both,United Kingdom,1985,27630,United Kingdom - Australia
+Australia,Immigrants,Both,New Zealand,1985,27070,New Zealand - Australia
+Germany,Immigrants,Both,United States,1985,26291,United States - Germany
+Germany,Immigrants,Both,Poland,1986,105384,Poland - Germany
+United States,Immigrants,Foreigners,Mexico,1986,66533,Mexico - United States
+Germany,Immigrants,Both,Turkey,1986,62958,Turkey - Germany
+United States,Immigrants,Foreigners,Philippines,1986,52558,Philippines - United States
+Germany,Immigrants,Both,Italy,1986,49243,Italy - Germany
+Australia,Immigrants,Both,United Kingdom,1986,35910,United Kingdom - Australia
+United States,Immigrants,Foreigners,"Korea, Rep.",1986,35776,"Korea, Rep. - United States"
+United States,Immigrants,Foreigners,Cuba,1986,33114,Cuba - United States
+Australia,Immigrants,Both,New Zealand,1986,31240,New Zealand - Australia
+United States,Immigrants,Foreigners,Vietnam,1986,29993,Vietnam - United States
+Germany,Immigrants,Both,Poland,1987,158226,Poland - Germany
+United States,Immigrants,Foreigners,Mexico,1987,72351,Mexico - United States
+Germany,Immigrants,Both,Turkey,1987,67136,Turkey - Germany
+United States,Immigrants,Foreigners,Philippines,1987,50060,Philippines - United States
+Germany,Immigrants,Both,Italy,1987,48005,Italy - Germany
+Australia,Immigrants,Both,United Kingdom,1987,38980,United Kingdom - Australia
+United States,Immigrants,Foreigners,"Korea, Rep.",1987,35849,"Korea, Rep. - United States"
+Australia,Immigrants,Both,New Zealand,1987,31610,New Zealand - Australia
+United States,Immigrants,Foreigners,Cuba,1987,28916,Cuba - United States
+United States,Immigrants,Foreigners,India,1987,27803,India - United States
+Germany,Immigrants,Both,Poland,1988,313792,Poland - Germany
+United States,Immigrants,Foreigners,Mexico,1988,95039,Mexico - United States
+Germany,Immigrants,Both,Turkey,1988,79244,Turkey - Germany
+United States,Immigrants,Foreigners,Philippines,1988,50697,Philippines - United States
+Australia,Immigrants,Both,United Kingdom,1988,45550,United Kingdom - Australia
+Germany,Immigrants,Both,Italy,1988,44549,Italy - Germany
+Australia,Immigrants,Both,New Zealand,1988,43960,New Zealand - Australia
+United States,Immigrants,Foreigners,Haiti,1988,34806,Haiti - United States
+United States,Immigrants,Foreigners,"Korea, Rep.",1988,34703,"Korea, Rep. - United States"
+Germany,Immigrants,Both,Greece,1988,34123,Greece - Germany
+Germany,Immigrants,Both,Poland,1989,455075,Poland - Germany
+United States,Immigrants,Foreigners,Mexico,1989,405172,Mexico - United States
+Germany,Immigrants,Both,Turkey,1989,86643,Turkey - Germany
+United States,Immigrants,Foreigners,El Salvador,1989,57878,El Salvador - United States
+United States,Immigrants,Foreigners,Philippines,1989,57034,Philippines - United States
+Australia,Immigrants,Both,United Kingdom,1989,44620,United Kingdom - Australia
+Germany,Immigrants,Both,Italy,1989,43061,Italy - Germany
+United States,Immigrants,Foreigners,Vietnam,1989,37739,Vietnam - United States
+United States,Immigrants,Foreigners,"Korea, Rep.",1989,34222,"Korea, Rep. - United States"
+Australia,Immigrants,Both,New Zealand,1989,34060,New Zealand - Australia
+United States,Immigrants,Foreigners,Mexico,1990,679068,Mexico - United States
+Germany,Immigrants,Both,Poland,1990,300693,Poland - Germany
+Germany,Immigrants,Both,Romania,1990,174388,Romania - Germany
+Germany,Immigrants,Both,Turkey,1990,84592,Turkey - Germany
+United States,Immigrants,Foreigners,El Salvador,1990,80173,El Salvador - United States
+United States,Immigrants,Foreigners,Philippines,1990,63756,Philippines - United States
+United States,Immigrants,Foreigners,Vietnam,1990,48792,Vietnam - United States
+Australia,Immigrants,Both,United Kingdom,1990,45860,United Kingdom - Australia
+United States,Immigrants,Foreigners,Dominican Republic,1990,42195,Dominican Republic - United States
+Germany,Immigrants,Both,Italy,1990,39679,Italy - Germany
+United States,Immigrants,Foreigners,Mexico,1991,946167,Mexico - United States
+Russian Federation,Immigrants,Both,Ukraine,1991,210121,Ukraine - Russian Federation
+Germany,Immigrants,Both,Poland,1991,145663,Poland - Germany
+Russian Federation,Immigrants,Both,Kazakhstan,1991,128906,Kazakhstan - Russian Federation
+Germany,Immigrants,Both,Romania,1991,84165,Romania - Germany
+Germany,Immigrants,Both,Turkey,1991,82818,Turkey - Germany
+Russian Federation,Immigrants,Both,Uzbekistan,1991,69149,Uzbekistan - Russian Federation
+United States,Immigrants,Foreigners,Philippines,1991,63596,Philippines - United States
+United States,Immigrants,Foreigners,Vietnam,1991,55307,Vietnam - United States
+Russian Federation,Immigrants,Both,Azerbaijan,1991,47951,Azerbaijan - Russian Federation
+United States,Immigrants,Foreigners,Mexico,1992,213802,Mexico - United States
+Russian Federation,Immigrants,Both,Ukraine,1992,199355,Ukraine - Russian Federation
+Russian Federation,Immigrants,Both,Kazakhstan,1992,183891,Kazakhstan - Russian Federation
+Germany,Immigrants,Both,Poland,1992,143709,Poland - Germany
+Germany,Immigrants,Both,Romania,1992,121291,Romania - Germany
+Russian Federation,Immigrants,Both,Uzbekistan,1992,112442,Uzbekistan - Russian Federation
+Germany,Immigrants,Both,Kazakhstan,1992,86864,Kazakhstan - Germany
+Germany,Immigrants,Both,Russian Federation,1992,84509,Russian Federation - Germany
+Germany,Immigrants,Both,Turkey,1992,81404,Turkey - Germany
+United States,Immigrants,Foreigners,Vietnam,1992,77735,Vietnam - United States
+Russian Federation,Immigrants,Both,Kazakhstan,1993,195672,Kazakhstan - Russian Federation
+Russian Federation,Immigrants,Both,Ukraine,1993,189409,Ukraine - Russian Federation
+United States,Immigrants,Foreigners,Mexico,1993,126561,Mexico - United States
+Germany,Immigrants,Both,Bosnia and Herzegovina,1993,107422,Bosnia and Herzegovina - Germany
+Germany,Immigrants,Both,Kazakhstan,1993,107076,Kazakhstan - Germany
+Russian Federation,Immigrants,Both,Kyrgyz Republic,1993,96814,Kyrgyz Republic - Russian Federation
+Russian Federation,Immigrants,Both,Uzbekistan,1993,91164,Uzbekistan - Russian Federation
+Germany,Immigrants,Both,Romania,1993,86559,Romania - Germany
+Germany,Immigrants,Both,Russian Federation,1993,85451,Russian Federation - Germany
+Germany,Immigrants,Both,Poland,1993,81740,Poland - Germany
+Russian Federation,Immigrants,Both,Kazakhstan,1994,346363,Kazakhstan - Russian Federation
+Russian Federation,Immigrants,Both,Ukraine,1994,247351,Ukraine - Russian Federation
+Russian Federation,Immigrants,Both,Uzbekistan,1994,146670,Uzbekistan - Russian Federation
+United States,Immigrants,Foreigners,Mexico,1994,111398,Mexico - United States
+Russian Federation,Immigrants,Both,Georgia,1994,66847,Georgia - Russian Federation
+Russian Federation,Immigrants,Both,Kyrgyz Republic,1994,66489,Kyrgyz Republic - Russian Federation
+United States,Immigrants,Foreigners,China,1994,53985,China - United States
+United States,Immigrants,Foreigners,Philippines,1994,53535,Philippines - United States
+United States,Immigrants,Foreigners,Dominican Republic,1994,51189,Dominican Republic - United States
+Russian Federation,Immigrants,Both,Azerbaijan,1994,49495,Azerbaijan - Russian Federation
+Russian Federation,Immigrants,Both,Kazakhstan,1995,241427,Kazakhstan - Russian Federation
+Russian Federation,Immigrants,Both,Ukraine,1995,188443,Ukraine - Russian Federation
+Germany,Immigrants,Both,Kazakhstan,1995,123277,Kazakhstan - Germany
+Russian Federation,Immigrants,Both,Uzbekistan,1995,112312,Uzbekistan - Russian Federation
+Germany,Immigrants,Both,Russian Federation,1995,107377,Russian Federation - Germany
+Germany,Immigrants,Both,Poland,1995,99706,Poland - Germany
+United States,Immigrants,Foreigners,Mexico,1995,89932,Mexico - United States
+Germany,Immigrants,Both,Turkey,1995,74558,Turkey - Germany
+Germany,Immigrants,Both,Bosnia and Herzegovina,1995,55473,Bosnia and Herzegovina - Germany
+Russian Federation,Immigrants,Both,Georgia,1995,51412,Georgia - Russian Federation
+Russian Federation,Immigrants,Both,Kazakhstan,1996,172860,Kazakhstan - Russian Federation
+Russian Federation,Immigrants,Both,Ukraine,1996,170928,Ukraine - Russian Federation
+United States,Immigrants,Foreigners,Mexico,1996,163556,Mexico - United States
+Germany,Immigrants,Both,Kazakhstan,1996,98137,Kazakhstan - Germany
+Germany,Immigrants,Both,Poland,1996,91314,Poland - Germany
+Germany,Immigrants,Both,Russian Federation,1996,83378,Russian Federation - Germany
+Germany,Immigrants,Both,Turkey,1996,74344,Turkey - Germany
+United States,Immigrants,Foreigners,Philippines,1996,55868,Philippines - United States
+Russian Federation,Immigrants,Both,Uzbekistan,1996,49970,Uzbekistan - Russian Federation
+Germany,Immigrants,Both,Italy,1996,48510,Italy - Germany
+Russian Federation,Immigrants,Both,Kazakhstan,1997,235903,Kazakhstan - Russian Federation
+United States,Immigrants,Foreigners,Mexico,1997,146833,Mexico - United States
+Russian Federation,Immigrants,Both,Ukraine,1997,138231,Ukraine - Russian Federation
+Germany,Immigrants,Both,Poland,1997,85615,Poland - Germany
+Germany,Immigrants,Both,Kazakhstan,1997,83242,Kazakhstan - Germany
+Germany,Immigrants,Both,Russian Federation,1997,67178,Russian Federation - Germany
+Germany,Immigrants,Both,Turkey,1997,57148,Turkey - Germany
+United States,Immigrants,Foreigners,Philippines,1997,49102,Philippines - United States
+Croatia,Immigrants,Both,Bosnia and Herzegovina,1997,42889,Bosnia and Herzegovina - Croatia
+Australia,Immigrants,Both,United Kingdom,1997,42010,United Kingdom - Australia
+Russian Federation,Immigrants,Both,Kazakhstan,1998,209880,Kazakhstan - Russian Federation
+United States,Immigrants,Foreigners,Mexico,1998,131353,Mexico - United States
+Russian Federation,Immigrants,Both,Ukraine,1998,111934,Ukraine - Russian Federation
+Germany,Immigrants,Both,Poland,1998,82049,Poland - Germany
+Germany,Immigrants,Both,Russian Federation,1998,58633,Russian Federation - Germany
+Germany,Immigrants,Both,Kazakhstan,1998,56128,Kazakhstan - Germany
+Germany,Immigrants,Both,Turkey,1998,49091,Turkey - Germany
+Australia,Immigrants,Both,United Kingdom,1998,42700,United Kingdom - Australia
+Russian Federation,Immigrants,Both,Uzbekistan,1998,41800,Uzbekistan - Russian Federation
+Germany,Immigrants,Both,Italy,1998,37660,Italy - Germany
+United States,Immigrants,Foreigners,Mexico,1999,147402,Mexico - United States
+Russian Federation,Immigrants,Both,Kazakhstan,1999,138521,Kazakhstan - Russian Federation
+Germany,Immigrants,Both,Poland,1999,90168,Poland - Germany
+Russian Federation,Immigrants,Both,Ukraine,1999,81297,Ukraine - Russian Federation
+Germany,Immigrants,Both,Russian Federation,1999,67734,Russian Federation - Germany
+Germany,Immigrants,Both,Kazakhstan,1999,54054,Kazakhstan - Germany
+Australia,Immigrants,Both,United Kingdom,1999,49310,United Kingdom - Australia
+Germany,Immigrants,Both,Turkey,1999,48383,Turkey - Germany
+Russian Federation,Immigrants,Both,Uzbekistan,1999,41615,Uzbekistan - Russian Federation
+Australia,Immigrants,Both,New Zealand,1999,40200,New Zealand - Australia
+United States,Immigrants,Foreigners,Mexico,2000,173493,Mexico - United States
+Russian Federation,Immigrants,Both,Kazakhstan,2000,124903,Kazakhstan - Russian Federation
+Germany,Immigrants,Both,Poland,2000,94105,Poland - Germany
+Spain,Immigrants,Both,Ecuador,2000,91655,Ecuador - Spain
+Russian Federation,Immigrants,Both,Ukraine,2000,74748,Ukraine - Russian Federation
+Germany,Immigrants,Both,Russian Federation,2000,72152,Russian Federation - Germany
+Germany,Immigrants,Both,Kazakhstan,2000,54906,Kazakhstan - Germany
+Australia,Immigrants,Both,United Kingdom,2000,51000,United Kingdom - Australia
+Germany,Immigrants,Both,Turkey,2000,50499,Turkey - Germany
+Australia,Immigrants,Both,New Zealand,2000,47230,New Zealand - Australia
+United States,Immigrants,Foreigners,Mexico,2001,205560,Mexico - United States
+Germany,Immigrants,Both,Poland,2001,100522,Poland - Germany
+Spain,Immigrants,Both,Ecuador,2001,82742,Ecuador - Spain
+Spain,Immigrants,Both,Colombia,2001,71575,Colombia - Spain
+United States,Immigrants,Foreigners,India,2001,70032,India - United States
+Russian Federation,Immigrants,Both,Kazakhstan,2001,65226,Kazakhstan - Russian Federation
+United States,Immigrants,Foreigners,China,2001,56267,China - United States
+Australia,Immigrants,Both,United Kingdom,2001,52940,United Kingdom - Australia
+United States,Immigrants,Foreigners,Philippines,2001,52919,Philippines - United States
+Australia,Immigrants,Both,New Zealand,2001,45570,New Zealand - Australia
+United States,Immigrants,Foreigners,Mexico,2002,218822,Mexico - United States
+Germany,Immigrants,Both,Poland,2002,100968,Poland - Germany
+Spain,Immigrants,Both,Ecuador,2002,89249,Ecuador - Spain
+Germany,Immigrants,Both,Russian Federation,2002,77403,Russian Federation - Germany
+United States,Immigrants,Foreigners,India,2002,70823,India - United States
+United States,Immigrants,Foreigners,China,2002,61082,China - United States
+Germany,Immigrants,Both,Turkey,2002,58648,Turkey - Germany
+Australia,Immigrants,Both,United Kingdom,2002,57330,United Kingdom - Australia
+Russian Federation,Immigrants,Both,Kazakhstan,2002,55706,Kazakhstan - Russian Federation
+United States,Immigrants,Foreigners,Philippines,2002,51040,Philippines - United States
+United States,Immigrants,Foreigners,Mexico,2003,115585,Mexico - United States
+Italy,Immigrants,Both,Romania,2003,78814,Romania - Italy
+Spain,Immigrants,Both,Ecuador,2003,73139,Ecuador - Spain
+Australia,Immigrants,Both,United Kingdom,2003,70150,United Kingdom - Australia
+Spain,Immigrants,Both,Romania,2003,55294,Romania - Spain
+United States,Immigrants,Foreigners,India,2003,50228,India - United States
+Italy,Immigrants,Both,Albania,2003,49524,Albania - Italy
+United States,Immigrants,Foreigners,Philippines,2003,45250,Philippines - United States
+Italy,Immigrants,Both,Ukraine,2003,44195,Ukraine - Italy
+Spain,Immigrants,Both,Morocco,2003,41401,Morocco - Spain
+United States,Immigrants,Foreigners,Mexico,2004,175411,Mexico - United States
+Germany,Immigrants,Both,Poland,2004,139283,Poland - Germany
+Spain,Immigrants,Both,Romania,2004,89620,Romania - Spain
+United States,Immigrants,Foreigners,India,2004,70151,India - United States
+Italy,Immigrants,Both,Romania,2004,67148,Romania - Italy
+Spain,Immigrants,Both,Morocco,2004,59295,Morocco - Spain
+Germany,Immigrants,Both,Russian Federation,2004,58594,Russian Federation - Germany
+United States,Immigrants,Foreigners,Philippines,2004,57846,Philippines - United States
+United States,Immigrants,Foreigners,China,2004,55494,China - United States
+Australia,Immigrants,Both,United Kingdom,2004,53140,United Kingdom - Australia
+United States,Immigrants,Foreigners,Mexico,2005,161445,Mexico - United States
+Germany,Immigrants,Both,Poland,2005,159157,Poland - Germany
+Spain,Immigrants,Both,Romania,2005,94084,Romania - Spain
+United States,Immigrants,Foreigners,India,2005,84680,India - United States
+United States,Immigrants,Foreigners,China,2005,69933,China - United States
+Spain,Immigrants,Both,Morocco,2005,69757,Morocco - Spain
+United States,Immigrants,Foreigners,Philippines,2005,60746,Philippines - United States
+Australia,Immigrants,Both,United Kingdom,2005,53300,United Kingdom - Australia
+Russian Federation,Immigrants,Both,Kazakhstan,2005,51945,Kazakhstan - Russian Federation
+United Kingdom,Immigrants,Both,Poland,2005,51915,Poland - United Kingdom
+United States,Immigrants,Foreigners,Mexico,2006,173749,Mexico - United States
+Germany,Immigrants,Both,Poland,2006,163643,Poland - Germany
+Spain,Immigrants,Both,Romania,2006,111981,Romania - Spain
+United States,Immigrants,Foreigners,China,2006,87307,China - United States
+United States,Immigrants,Foreigners,Philippines,2006,74606,Philippines - United States
+Spain,Immigrants,Both,Bolivia,2006,69796,Bolivia - Spain
+Spain,Immigrants,Both,Morocco,2006,61375,Morocco - Spain
+United States,Immigrants,Foreigners,India,2006,61369,India - United States
+United Kingdom,Immigrants,Both,Poland,2006,58468,Poland - United Kingdom
+Australia,Immigrants,Both,United Kingdom,2006,57250,United Kingdom - Australia
+Italy,Immigrants,Both,Romania,2007,274007,Romania - Italy
+Spain,Immigrants,Both,Romania,2007,174217,Romania - Spain
+Germany,Immigrants,Both,Poland,2007,153589,Poland - Germany
+United States,Immigrants,Foreigners,Mexico,2007,148640,Mexico - United States
+United States,Immigrants,Foreigners,China,2007,76655,China - United States
+United States,Immigrants,Foreigners,Philippines,2007,72596,Philippines - United States
+Spain,Immigrants,Both,Morocco,2007,71916,Morocco - Spain
+United States,Immigrants,Foreigners,India,2007,65353,India - United States
+Australia,Immigrants,Both,United Kingdom,2007,61490,United Kingdom - Australia
+Russian Federation,Immigrants,Both,Uzbekistan,2007,52802,Uzbekistan - Russian Federation
+United States,Immigrants,Foreigners,Mexico,2008,189989,Mexico - United States
+Italy,Immigrants,Both,Romania,2008,175907,Romania - Italy
+Germany,Immigrants,Both,Poland,2008,131308,Poland - Germany
+United States,Immigrants,Foreigners,China,2008,80271,China - United States
+Spain,Immigrants,Both,Morocco,2008,71663,Morocco - Spain
+Australia,Immigrants,Both,United Kingdom,2008,65160,United Kingdom - Australia
+United States,Immigrants,Foreigners,India,2008,63352,India - United States
+Spain,Immigrants,Both,Romania,2008,61034,Romania - Spain
+United Kingdom,Immigrants,Both,Poland,2008,60105,Poland - United Kingdom
+Australia,Immigrants,Both,India,2008,58400,India - Australia
+United States,Immigrants,Foreigners,Mexico,2009,164920,Mexico - United States
+Italy,Immigrants,Both,Romania,2009,106352,Romania - Italy
+United Kingdom,Immigrants,Both,India,2009,67086,India - United Kingdom
+United States,Immigrants,Foreigners,China,2009,64238,China - United States
+United States,Immigrants,Foreigners,Philippines,2009,60029,Philippines - United States
+United States,Immigrants,Foreigners,India,2009,57304,India - United States
+United States,Immigrants,Foreigners,Dominican Republic,2009,49414,Dominican Republic - United States
+Russian Federation,Immigrants,Both,Ukraine,2009,45920,Ukraine - Russian Federation
+Spain,Immigrants,Both,Romania,2009,43991,Romania - Spain
+Spain,Immigrants,Both,Morocco,2009,43441,Morocco - Spain
+United States,Immigrants,Foreigners,Mexico,2010,139120,Mexico - United States
+Italy,Immigrants,Both,Romania,2010,92591,Romania - Italy
+United States,Immigrants,Foreigners,China,2010,70863,China - United States
+United Kingdom,Immigrants,Both,India,2010,70809,India - United Kingdom
+United States,Immigrants,Foreigners,India,2010,69162,India - United States
+United States,Immigrants,Foreigners,Philippines,2010,58173,Philippines - United States
+United States,Immigrants,Foreigners,Dominican Republic,2010,53870,Dominican Republic - United States
+Spain,Immigrants,Both,Romania,2010,51823,Romania - Spain
+Canada,Immigrants,Foreigners,Philippines,2010,38617,Philippines - Canada
+Canada,Immigrants,Foreigners,India,2010,34235,India - Canada
+United States,Immigrants,Foreigners,Mexico,2011,143446,Mexico - United States
+Italy,Immigrants,Both,Romania,2011,90136,Romania - Italy
+United States,Immigrants,Foreigners,China,2011,87016,China - United States
+United States,Immigrants,Foreigners,India,2011,69013,India - United States
+United Kingdom,Immigrants,Both,India,2011,64608,India - United Kingdom
+United States,Immigrants,Foreigners,Philippines,2011,57011,Philippines - United States
+Spain,Immigrants,Both,Romania,2011,50748,Romania - Spain
+United Kingdom,Immigrants,Both,China,2011,47030,China - United Kingdom
+United States,Immigrants,Foreigners,Dominican Republic,2011,46109,Dominican Republic - United States
+Canada,Immigrants,Foreigners,Philippines,2011,36765,Philippines - Canada
+United States,Immigrants,Foreigners,Mexico,2012,146406,Mexico - United States
+United States,Immigrants,Foreigners,China,2012,81784,China - United States
+Italy,Immigrants,Both,Romania,2012,80080,Romania - Italy
+United States,Immigrants,Foreigners,India,2012,66434,India - United States
+United States,Immigrants,Foreigners,Philippines,2012,57327,Philippines - United States
+United Kingdom,Immigrants,Both,China,2012,50031,China - United Kingdom
+United States,Immigrants,Foreigners,Dominican Republic,2012,41566,Dominican Republic - United States
+United Kingdom,Immigrants,Both,India,2012,39596,India - United Kingdom
+Canada,Immigrants,Foreigners,Philippines,2012,34315,Philippines - Canada
+Canada,Immigrants,Foreigners,China,2012,33024,China - Canada
+United States,Immigrants,Foreigners,Mexico,2013,135028,Mexico - United States
+United States,Immigrants,Foreigners,China,2013,71798,China - United States
+United States,Immigrants,Foreigners,India,2013,68458,India - United States
+Italy,Immigrants,Both,Romania,2013,59347,Romania - Italy
+United States,Immigrants,Foreigners,Philippines,2013,54446,Philippines - United States
+United Kingdom,Immigrants,Both,China,2013,50444,China - United Kingdom
+United States,Immigrants,Foreigners,Dominican Republic,2013,41311,Dominican Republic - United States
+United Kingdom,Immigrants,Both,India,2013,35418,India - United Kingdom
+United Kingdom,Immigrants,Both,Spain,2013,34489,Spain - United Kingdom
+Canada,Immigrants,Foreigners,China,2013,34129,China - Canada

@@ -3,3 +3,5 @@ https://github.com/curran/screencasts/tree/gh-pages/introToD3
 
 Selecting data:
 http://stackoverflow.com/questions/24193593/d3-how-to-change-dataset-based-on-drop-down-box-selection
+http://stackoverflow.com/questions/18719383/how-to-filter-an-array-object-by-checking-multiple-values
+http://stackoverflow.com/questions/27714505/select-top-k-records-for-each-date

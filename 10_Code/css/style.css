@@ -51,3 +51,7 @@ a {
 .y.axis path, .y.axis line {
   stroke: none;
 }
+
+.axis text {
+  font-size: 0.8em
+}
