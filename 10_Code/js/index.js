@@ -6,8 +6,9 @@ for (i=1980;i<=2013;i++){
 $('#year_selector').html(select);
 //TODO: Think about a slider instead ...
 
-
-
+////////////////////////////////////////////////////////////////////////////////////////////////
+//1 - The following is for the bar chart////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////
 //Set the margins
 var outerWidth = 400;
 var outerHeight = 400;
@@ -22,15 +23,15 @@ var xColumn = "Migrants";
 var yColumn = "Flow";
 
 var svg = d3.select("body").append("svg")
-.attr("width",  outerWidth)
-.attr("height", outerHeight);
+	.attr("width",  outerWidth)
+	.attr("height", outerHeight);
 var g = svg.append("g")
-.attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+	.attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 var xAxisG = g.append("g")
-.attr("class", "x axis")
-.attr("transform", "translate(0," + innerHeight + ")");
+	.attr("class", "x axis")
+	.attr("transform", "translate(0," + innerHeight + ")");
 var yAxisG = g.append("g")
-.attr("class", "y axis");
+	.attr("class", "y axis");
 
 var maxMigrationCtryToCtry;
 var xScale = d3.scale.linear().range(      [0, innerWidth]);
@@ -64,18 +65,62 @@ function render(data){
   //exit
   bars.exit().remove();
 }
+
+////////////////////////////////////////////////////////////////////////////////////////////////	
+// 2 - Map related /////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////
+
+//Preperation happening
+var outerWidthGeo = 800;
+var outerHeightGeo = 400;
+var marginGeo = { left: 200, top: 0, right: 5, bottom: 30 };
+var barPaddingGeo = 0.2;
+
+var innerWidthGeo  = outerWidthGeo  - marginGeo.left - marginGeo.right;
+var innerHeightGeo = outerHeightGeo - marginGeo.top  - marginGeo.bottom;
+
+var svgGeo = d3.select("body").append("svg")
+	.attr("width",  outerWidthGeo)
+	.attr("height", outerHeightGeo);
+
+	
+//Mapping to the SVG
+var projection = d3.geo.mercator()
+				   .scale(100)
+				   .translate([innerWidthGeo / 2, innerHeightGeo / 1.2])
+				   .center([0,-30]);
+var path = d3.geo.path().projection(projection);
+
+d3.json("world_countries.json", function(json) {
+	svgGeo.selectAll("path")
+		.data(json.features)
+		.enter()
+		.append("path")
+		.attr("d", path)
+		.style("fill", "RGB(220,220,220)")
+		.style("stroke", "black")
+		.style("stroke-width", 0.2);
+		});
+
+var route = svgGeo.append("path")
+               .datum({type: "LineString", coordinates: [[0,0], [100,100]]})
+               .attr("class", "route")
+               .attr("d", path)
+			   .style("stroke-width", 5);
+		
+////////////////////////////////////////////////////////////////////////////////////////////////	
+// 3 - General things happpening ///////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////
 var dropdown = document.getElementById("year_selector");
+var a = +dropdown.options[dropdown.selectedIndex].value;
+var dMigPerCtry, dCurrentSelection;
 
 
-//Load and plot initial selection
 function type(d){
 	d["Year"] = +d["Year"];
 	d["Migrants"] = +d["Migrants"];
 	return d;
 	}
-
-var a = +dropdown.options[dropdown.selectedIndex].value;
-var dMigPerCtry, dCurrentSelection;
 
 //Load initial data
 d3.csv("MigrationPerCountry_Top10.csv", type, function(d) {
