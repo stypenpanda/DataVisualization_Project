@@ -41,7 +41,7 @@ a {
   padding: 5px;
   }
   
-  /*D3 part */
+/*D3 part */
 
 .axis path, .axis line {
   fill: none;
@@ -54,4 +54,23 @@ a {
 
 .axis text {
   font-size: 0.8em
+}
+
+.bar{
+	fill: RGB(220,220,220);
+}
+
+/*map related*/
+.country{
+	fill: RGB(220,220,220);
+	stroke: black;
+	stroke-width: 0.2;
+}
+
+.selected{
+	fill: steelblue; /*RGB(150,150,150);*/
+}
+.flow{
+	stroke-width: 1;
+	stroke: black;
 }

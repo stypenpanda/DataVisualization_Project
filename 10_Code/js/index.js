@@ -56,7 +56,13 @@ function render(data){
   //enter
   bars.enter().append("rect")
     .attr("height", yScale.rangeBand())
-    .attr("fill", "grey");
+    .attr("class", "bar")
+	.on("mouseover", function(){
+		d3.select(this).classed("selected", true);
+	})
+	.on("mouseout", function(){
+		d3.select(this).classed("selected", false);
+	});
   //update //TOCHECK: probably include exit in update!!!
   bars
     .attr("x", 0)
@@ -91,23 +97,46 @@ var projection = d3.geo.mercator()
 				   .center([0,-30]);
 var path = d3.geo.path().projection(projection);
 
+//Add the world map
 d3.json("world_countries.json", function(json) {
-	svgGeo.selectAll("path")
+	svgGeo.selectAll(".country")
 		.data(json.features)
 		.enter()
 		.append("path")
 		.attr("d", path)
-		.style("fill", "RGB(220,220,220)")
-		.style("stroke", "black")
-		.style("stroke-width", 0.2);
+		.attr("class", "country")
+		.on('mouseover', function(d) {
+			// Add the class "selected"
+			d3.select(this).classed("selected", true)
+		})
+		.on('mouseout', function(d) {
+			// Remove the class "selected"
+			d3.select(this).classed("selected", false)
+		});
+			
+	// Add a flow
+	var flow = svgGeo.selectAll(".flow")
+		.data(testData)
+		.enter()
+		.append("line")
+		.attr("x1", function(d) {
+			return projection([d.sLong, 0])[0];
+		})
+		.attr("y1", function(d) {
+			return projection([0, d.sLat])[1];
+		})
+		.attr("x2", function(d) {
+			return projection([d.eLong, 0])[0];
+		})
+		.attr("y2", function(d) {
+			return projection([0, d.eLat])[1];
+		})
+		.attr("class", "flow");	
 		});
 
-var route = svgGeo.append("path")
-               .datum({type: "LineString", coordinates: [[0,0], [100,100]]})
-               .attr("class", "route")
-               .attr("d", path)
-			   .style("stroke-width", 5);
-		
+var testData = 	[	{"Name": "CGN-PVG", "sLat": 50.9375, "sLong": 6.9603, "eLat": 31.2304, "eLong": 121.4737},
+				{"Name": "Test2", "sLong": 0, "sLat": 0, "eLong": -50, "eLat": -50}]	
+
 ////////////////////////////////////////////////////////////////////////////////////////////////	
 // 3 - General things happpening ///////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////////////////////

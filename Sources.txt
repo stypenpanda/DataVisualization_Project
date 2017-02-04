@@ -1,6 +1,9 @@
 Quick re-cap and intro:
 https://github.com/curran/screencasts/tree/gh-pages/introToD3
 
+Mouseover:
+https://www.youtube.com/watch?v=aNbgrqRuoiE
+
 Selecting data:
 http://stackoverflow.com/questions/24193593/d3-how-to-change-dataset-based-on-drop-down-box-selection
 http://stackoverflow.com/questions/18719383/how-to-filter-an-array-object-by-checking-multiple-values
