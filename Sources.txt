@@ -8,3 +8,12 @@ Selecting data:
 http://stackoverflow.com/questions/24193593/d3-how-to-change-dataset-based-on-drop-down-box-selection
 http://stackoverflow.com/questions/18719383/how-to-filter-an-array-object-by-checking-multiple-values
 http://stackoverflow.com/questions/27714505/select-top-k-records-for-each-date
+
+Country Centroids:
+http://gothos.info/2009/02/centroids-for-countries/
+
+Drawing arrow heads:
+http://stackoverflow.com/questions/33830055/d3js-adding-an-arrow-head-to-a-line
+
+Executing one function after the other:
+http://stackoverflow.com/questions/5187968/how-should-i-call-3-functions-in-order-to-execute-them-one-after-the-other

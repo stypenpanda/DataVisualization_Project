@@ -68,9 +68,13 @@ a {
 }
 
 .selected{
-	fill: steelblue; /*RGB(150,150,150);*/
+	fill: red;
+}
+.selected-country{
+	fill: RGB(150,150,150);
 }
 .flow{
-	stroke-width: 1;
+	/*stroke-width: 1;*/
 	stroke: black;
+	/*stroke-opacity: 0.5;*/
 }

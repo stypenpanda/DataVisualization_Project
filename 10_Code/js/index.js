@@ -19,9 +19,14 @@ var innerWidth  = outerWidth  - margin.left - margin.right;
 var innerHeight = outerHeight - margin.top  - margin.bottom;
 
 //Top yearly movements as barcharts
-var xColumn = "Migrants";
-var yColumn = "Flow";
+var xColumn = "Migrants",
+	yColumn = "Flow";
+var oFlowLat = "oLat",
+	oFlowLong = "oLong",
+	dFlowLat = "dLat",
+	dFlowLong = "dLong";
 
+	
 var svg = d3.select("body").append("svg")
 	.attr("width",  outerWidth)
 	.attr("height", outerHeight);
@@ -38,17 +43,16 @@ var xScale = d3.scale.linear().range(      [0, innerWidth]);
 var yScale = d3.scale.ordinal().rangeBands([0, innerHeight], barPadding);
 
 var xAxis = d3.svg.axis().scale(xScale).orient("bottom")
-.ticks(5)                   // Use approximately 5 ticks marks.
-.tickFormat(d3.format("s")) // Use intelligent abbreviations, e.g. 5M for 5 Million
-.outerTickSize(0);          // Turn off the marks at the end of the axis.
+	.ticks(5)                   // Use approximately 5 ticks marks.
+	.tickFormat(d3.format("s")) // Use intelligent abbreviations, e.g. 5M for 5 Million
+	.outerTickSize(0);          // Turn off the marks at the end of the axis.
 var yAxis = d3.svg.axis().scale(yScale).orient("left")
-.outerTickSize(0);          // Turn off the marks at the end of the axis.
+	.outerTickSize(0);          // Turn off the marks at the end of the axis.
 
 function render(data){
   //adjust axes
-  xScale.domain([0, maxMigrationCtryToCtry//d3.max(data, function (d){ return d[xColumn]; })
-				]);
-  yScale.domain(       data.map( function (d){ return d[yColumn]; }));
+  xScale.domain([0, maxMigrationCtryToCtry]);
+  yScale.domain(data.map( function (d){ return d[yColumn]; }));
   xAxisG.call(xAxis);
   yAxisG.call(yAxis);
   //bind data
@@ -80,7 +84,10 @@ function render(data){
 var outerWidthGeo = 800;
 var outerHeightGeo = 400;
 var marginGeo = { left: 200, top: 0, right: 5, bottom: 30 };
-var barPaddingGeo = 0.2;
+var barPaddingGeo = 0.2;	
+var l2OffsetDistance = 50;
+var scaleStrokeWidth = d3.scale.linear().domain([0, 1000*1000])
+										.range([0.2, 10]);
 
 var innerWidthGeo  = outerWidthGeo  - marginGeo.left - marginGeo.right;
 var innerHeightGeo = outerHeightGeo - marginGeo.top  - marginGeo.bottom;
@@ -89,6 +96,16 @@ var svgGeo = d3.select("body").append("svg")
 	.attr("width",  outerWidthGeo)
 	.attr("height", outerHeightGeo);
 
+//Define arrow head
+svgGeo.append("defs").append("marker")
+    .attr("id", "arrowhead")
+    .attr("refX", 4)
+    .attr("refY", 2)
+    .attr("markerWidth", 6)
+    .attr("markerHeight", 4)
+    .attr("orient", "auto")
+    .append("path")
+    .attr("d", "M 0,0 V 4 L6,2 Z"); //this is actual shape for arrowhead
 	
 //Mapping to the SVG
 var projection = d3.geo.mercator()
@@ -98,7 +115,8 @@ var projection = d3.geo.mercator()
 var path = d3.geo.path().projection(projection);
 
 //Add the world map
-d3.json("world_countries.json", function(json) {
+function drawWorldMap(jsonName, callback){
+	d3.json(jsonName, function(json) {
 	svgGeo.selectAll(".country")
 		.data(json.features)
 		.enter()
@@ -107,35 +125,44 @@ d3.json("world_countries.json", function(json) {
 		.attr("class", "country")
 		.on('mouseover', function(d) {
 			// Add the class "selected"
-			d3.select(this).classed("selected", true)
+			d3.select(this).classed("selected-country", true)
 		})
 		.on('mouseout', function(d) {
 			// Remove the class "selected"
-			d3.select(this).classed("selected", false)
+			d3.select(this).classed("selected-country", false)
 		});
-			
-	// Add a flow
-	var flow = svgGeo.selectAll(".flow")
-		.data(testData)
-		.enter()
-		.append("line")
-		.attr("x1", function(d) {
-			return projection([d.sLong, 0])[0];
-		})
-		.attr("y1", function(d) {
-			return projection([0, d.sLat])[1];
-		})
-		.attr("x2", function(d) {
-			return projection([d.eLong, 0])[0];
-		})
-		.attr("y2", function(d) {
-			return projection([0, d.eLat])[1];
-		})
-		.attr("class", "flow");	
 		});
+	callback()
+}
 
-var testData = 	[	{"Name": "CGN-PVG", "sLat": 50.9375, "sLong": 6.9603, "eLat": 31.2304, "eLong": 121.4737},
-				{"Name": "Test2", "sLong": 0, "sLat": 0, "eLong": -50, "eLat": -50}]	
+function renderArrows(data){
+	//bind data
+	var flows = svgGeo.selectAll(".flow").data(data);
+	//enter
+	flows.enter().append("line")
+		.attr("class", "flow")
+		.attr("marker-end", "url(#arrowhead)");;
+	//update
+	flows.attr("x1", function(d){return projection([d[oFlowLong], 0])[0];})
+		.attr("y1", function(d){return projection([0, d[oFlowLat]])[1];})
+		.attr("x2", function(d){
+			var orig = projection([d[oFlowLong], d[oFlowLat]]),
+				dest = projection([d[dFlowLong], d[dFlowLat]]);
+			var z = Math.sqrt(l2OffsetDistance / (Math.pow(orig[0]-dest[0],2) + Math.pow(orig[1]-dest[1],2)));
+			return dest[0] + z*(orig[0]-dest[0]);
+			})
+		.attr("y2", function(d){
+			var orig = projection([d[oFlowLong], d[oFlowLat]]),
+				dest = projection([d[dFlowLong], d[dFlowLat]]);
+			var z = Math.sqrt(l2OffsetDistance / (Math.pow(orig[0]-dest[0],2) + Math.pow(orig[1]-dest[1],2)));
+			console.log(z);
+			console.log(dest[1]);
+			return dest[1] + z*(orig[1]-dest[1]);
+			})
+		.attr("stroke-width", function(d) {return scaleStrokeWidth(d[xColumn]);});
+	//exit
+	flows.exit().remove();
+}
 
 ////////////////////////////////////////////////////////////////////////////////////////////////	
 // 3 - General things happpening ///////////////////////////////////////////////////////////////
@@ -152,15 +179,21 @@ function type(d){
 	}
 
 //Load initial data
-d3.csv("MigrationPerCountry_Top10.csv", type, function(d) {
-		//Filter for respective year
-		dMigPerCtry = d;
-		maxMigrationCtryToCtry = d3.max(d, function (d){ return d[xColumn]; })
-		dCurrentSelection = d.filter(function(data){
-			return  data["Year"] === a;
-			});
-		render(dCurrentSelection);
+drawWorldMap("world_countries.json", function(d){
+		d3.csv("MigrationPerCountry_Top10_v02.csv", type, function(d) {
+			//Filter for respective year
+			dMigPerCtry = d;
+			dCurrentSelection = d.filter(function(data){
+				return  data["Year"] === a;
+				});
+			//SetMaxFlow
+			maxMigrationCtryToCtry = d3.max(d, function (d){ return d[xColumn]; })
+			//Initialize visulations with current data
+			render(dCurrentSelection);
+			renderArrows(dCurrentSelection);
+		})
 	});
+
 
 
 //Update graph when dropdown changes due to changes in selected data
@@ -170,5 +203,6 @@ d3.select('#year_selector')
     dCurrentSelection = dMigPerCtry.filter(function(data){
 			return  data["Year"] === a;
 			});
-	render(dCurrentSelection)
+	render(dCurrentSelection);
+	renderArrows(dCurrentSelection);
 	});

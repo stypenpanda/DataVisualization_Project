@@ -1,0 +1,341 @@
+Country,Type,Coverage,OdName,Year,Migrants,Flow,dLat,dLong,oLat,oLong
+Germany,Immigrants,Both,Turkey,1980,213126,Turkey - Germany,51.5,10.5,39.059012,34.911546
+Germany,Immigrants,Both,Italy,1980,88865,Italy - Germany,51.5,10.5,42.833333,12.833333
+Germany,Immigrants,Both,Poland,1980,67940,Poland - Germany,51.5,10.5,52.0,20.0
+United States,Immigrants,Foreigners,Mexico,1980,56680,Mexico - United States,39.828175,-98.5795,23.0,-102.0
+Australia,Immigrants,Both,United Kingdom,1980,43540,United Kingdom - Australia,-25.0,135.0,54.0,-4.0
+United States,Immigrants,Foreigners,Vietnam,1980,43483,Vietnam - United States,39.828175,-98.5795,16.166667,107.833333
+United States,Immigrants,Foreigners,Philippines,1980,42316,Philippines - United States,39.828175,-98.5795,13.0,122.0
+Australia,Immigrants,Both,New Zealand,1980,34370,New Zealand - Australia,-25.0,135.0,-42.0,174.0
+United States,Immigrants,Foreigners,"Korea, Rep.",1980,32320,"Korea, Rep. - United States",39.828175,-98.5795,37.0,127.5
+Germany,Immigrants,Both,Austria,1980,27849,Austria - Germany,51.5,10.5,47.333333,13.333333
+Germany,Immigrants,Both,Poland,1981,135278,Poland - Germany,51.5,10.5,52.0,20.0
+United States,Immigrants,Foreigners,Mexico,1981,101268,Mexico - United States,39.828175,-98.5795,23.0,-102.0
+Germany,Immigrants,Both,Turkey,1981,84711,Turkey - Germany,51.5,10.5,39.059012,34.911546
+Germany,Immigrants,Both,Italy,1981,67567,Italy - Germany,51.5,10.5,42.833333,12.833333
+Australia,Immigrants,Both,United Kingdom,1981,57050,United Kingdom - Australia,-25.0,135.0,54.0,-4.0
+United States,Immigrants,Foreigners,Vietnam,1981,55631,Vietnam - United States,39.828175,-98.5795,16.166667,107.833333
+United States,Immigrants,Foreigners,Philippines,1981,43772,Philippines - United States,39.828175,-98.5795,13.0,122.0
+Italy,Immigrants,Both,Switzerland,1981,37174,Switzerland - Italy,42.833333,12.833333,47.0,8.0
+Australia,Immigrants,Both,New Zealand,1981,34440,New Zealand - Australia,-25.0,135.0,-42.0,174.0
+United States,Immigrants,Foreigners,"Korea, Rep.",1981,32663,"Korea, Rep. - United States",39.828175,-98.5795,37.0,127.5
+United States,Immigrants,Foreigners,Vietnam,1982,72553,Vietnam - United States,39.828175,-98.5795,16.166667,107.833333
+Germany,Immigrants,Both,Poland,1982,58786,Poland - Germany,51.5,10.5,52.0,20.0
+United States,Immigrants,Foreigners,Mexico,1982,56106,Mexico - United States,39.828175,-98.5795,23.0,-102.0
+Australia,Immigrants,Both,United Kingdom,1982,51730,United Kingdom - Australia,-25.0,135.0,54.0,-4.0
+United States,Immigrants,Foreigners,Philippines,1982,45102,Philippines - United States,39.828175,-98.5795,13.0,122.0
+Germany,Immigrants,Both,Italy,1982,43834,Italy - Germany,51.5,10.5,42.833333,12.833333
+Germany,Immigrants,Both,Turkey,1982,43140,Turkey - Germany,51.5,10.5,39.059012,34.911546
+United States,Immigrants,Foreigners,Lao PDR,1982,36528,Lao PDR - United States,39.828175,-98.5795,18.0,105.0
+United States,Immigrants,Foreigners,"Korea, Rep.",1982,31724,"Korea, Rep. - United States",39.828175,-98.5795,37.0,127.5
+United States,Immigrants,Foreigners,China,1982,27100,China - United States,39.828175,-98.5795,35.0,105.0
+United States,Immigrants,Foreigners,Mexico,1983,59079,Mexico - United States,39.828175,-98.5795,23.0,-102.0
+Germany,Immigrants,Both,Poland,1983,55525,Poland - Germany,51.5,10.5,52.0,20.0
+United States,Immigrants,Foreigners,Philippines,1983,41546,Philippines - United States,39.828175,-98.5795,13.0,122.0
+Germany,Immigrants,Both,Italy,1983,38491,Italy - Germany,51.5,10.5,42.833333,12.833333
+United States,Immigrants,Foreigners,Vietnam,1983,37560,Vietnam - United States,39.828175,-98.5795,16.166667,107.833333
+United States,Immigrants,Foreigners,"Korea, Rep.",1983,33339,"Korea, Rep. - United States",39.828175,-98.5795,37.0,127.5
+Australia,Immigrants,Both,United Kingdom,1983,31660,United Kingdom - Australia,-25.0,135.0,54.0,-4.0
+Germany,Immigrants,Both,Turkey,1983,28345,Turkey - Germany,51.5,10.5,39.059012,34.911546
+United States,Immigrants,Foreigners,China,1983,25777,China - United States,39.828175,-98.5795,35.0,105.0
+United States,Immigrants,Foreigners,India,1983,25451,India - United States,39.828175,-98.5795,20.0,77.0
+Germany,Immigrants,Both,Poland,1984,82433,Poland - Germany,51.5,10.5,52.0,20.0
+United States,Immigrants,Foreigners,Mexico,1984,57557,Mexico - United States,39.828175,-98.5795,23.0,-102.0
+United States,Immigrants,Foreigners,Philippines,1984,42768,Philippines - United States,39.828175,-98.5795,13.0,122.0
+Germany,Immigrants,Both,Italy,1984,40238,Italy - Germany,51.5,10.5,42.833333,12.833333
+United States,Immigrants,Foreigners,Vietnam,1984,37236,Vietnam - United States,39.828175,-98.5795,16.166667,107.833333
+Germany,Immigrants,Both,Turkey,1984,34647,Turkey - Germany,51.5,10.5,39.059012,34.911546
+United States,Immigrants,Foreigners,"Korea, Rep.",1984,33042,"Korea, Rep. - United States",39.828175,-98.5795,37.0,127.5
+Australia,Immigrants,Both,United Kingdom,1984,25150,United Kingdom - Australia,-25.0,135.0,54.0,-4.0
+United States,Immigrants,Foreigners,India,1984,24964,India - United States,39.828175,-98.5795,20.0,77.0
+Germany,Immigrants,Both,United States,1984,24172,United States - Germany,51.5,10.5,39.828175,-98.5795
+Germany,Immigrants,Both,Poland,1985,89686,Poland - Germany,51.5,10.5,52.0,20.0
+United States,Immigrants,Foreigners,Mexico,1985,61077,Mexico - United States,39.828175,-98.5795,23.0,-102.0
+Germany,Immigrants,Both,Turkey,1985,48095,Turkey - Germany,51.5,10.5,39.059012,34.911546
+United States,Immigrants,Foreigners,Philippines,1985,47978,Philippines - United States,39.828175,-98.5795,13.0,122.0
+Germany,Immigrants,Both,Italy,1985,41948,Italy - Germany,51.5,10.5,42.833333,12.833333
+United States,Immigrants,Foreigners,"Korea, Rep.",1985,35253,"Korea, Rep. - United States",39.828175,-98.5795,37.0,127.5
+United States,Immigrants,Foreigners,Vietnam,1985,31895,Vietnam - United States,39.828175,-98.5795,16.166667,107.833333
+Australia,Immigrants,Both,United Kingdom,1985,27630,United Kingdom - Australia,-25.0,135.0,54.0,-4.0
+Australia,Immigrants,Both,New Zealand,1985,27070,New Zealand - Australia,-25.0,135.0,-42.0,174.0
+Germany,Immigrants,Both,United States,1985,26291,United States - Germany,51.5,10.5,39.828175,-98.5795
+Germany,Immigrants,Both,Poland,1986,105384,Poland - Germany,51.5,10.5,52.0,20.0
+United States,Immigrants,Foreigners,Mexico,1986,66533,Mexico - United States,39.828175,-98.5795,23.0,-102.0
+Germany,Immigrants,Both,Turkey,1986,62958,Turkey - Germany,51.5,10.5,39.059012,34.911546
+United States,Immigrants,Foreigners,Philippines,1986,52558,Philippines - United States,39.828175,-98.5795,13.0,122.0
+Germany,Immigrants,Both,Italy,1986,49243,Italy - Germany,51.5,10.5,42.833333,12.833333
+Australia,Immigrants,Both,United Kingdom,1986,35910,United Kingdom - Australia,-25.0,135.0,54.0,-4.0
+United States,Immigrants,Foreigners,"Korea, Rep.",1986,35776,"Korea, Rep. - United States",39.828175,-98.5795,37.0,127.5
+United States,Immigrants,Foreigners,Cuba,1986,33114,Cuba - United States,39.828175,-98.5795,22.0,-79.5
+Australia,Immigrants,Both,New Zealand,1986,31240,New Zealand - Australia,-25.0,135.0,-42.0,174.0
+United States,Immigrants,Foreigners,Vietnam,1986,29993,Vietnam - United States,39.828175,-98.5795,16.166667,107.833333
+Germany,Immigrants,Both,Poland,1987,158226,Poland - Germany,51.5,10.5,52.0,20.0
+United States,Immigrants,Foreigners,Mexico,1987,72351,Mexico - United States,39.828175,-98.5795,23.0,-102.0
+Germany,Immigrants,Both,Turkey,1987,67136,Turkey - Germany,51.5,10.5,39.059012,34.911546
+United States,Immigrants,Foreigners,Philippines,1987,50060,Philippines - United States,39.828175,-98.5795,13.0,122.0
+Germany,Immigrants,Both,Italy,1987,48005,Italy - Germany,51.5,10.5,42.833333,12.833333
+Australia,Immigrants,Both,United Kingdom,1987,38980,United Kingdom - Australia,-25.0,135.0,54.0,-4.0
+United States,Immigrants,Foreigners,"Korea, Rep.",1987,35849,"Korea, Rep. - United States",39.828175,-98.5795,37.0,127.5
+Australia,Immigrants,Both,New Zealand,1987,31610,New Zealand - Australia,-25.0,135.0,-42.0,174.0
+United States,Immigrants,Foreigners,Cuba,1987,28916,Cuba - United States,39.828175,-98.5795,22.0,-79.5
+United States,Immigrants,Foreigners,India,1987,27803,India - United States,39.828175,-98.5795,20.0,77.0
+Germany,Immigrants,Both,Poland,1988,313792,Poland - Germany,51.5,10.5,52.0,20.0
+United States,Immigrants,Foreigners,Mexico,1988,95039,Mexico - United States,39.828175,-98.5795,23.0,-102.0
+Germany,Immigrants,Both,Turkey,1988,79244,Turkey - Germany,51.5,10.5,39.059012,34.911546
+United States,Immigrants,Foreigners,Philippines,1988,50697,Philippines - United States,39.828175,-98.5795,13.0,122.0
+Australia,Immigrants,Both,United Kingdom,1988,45550,United Kingdom - Australia,-25.0,135.0,54.0,-4.0
+Germany,Immigrants,Both,Italy,1988,44549,Italy - Germany,51.5,10.5,42.833333,12.833333
+Australia,Immigrants,Both,New Zealand,1988,43960,New Zealand - Australia,-25.0,135.0,-42.0,174.0
+United States,Immigrants,Foreigners,Haiti,1988,34806,Haiti - United States,39.828175,-98.5795,19.0,-72.416667
+United States,Immigrants,Foreigners,"Korea, Rep.",1988,34703,"Korea, Rep. - United States",39.828175,-98.5795,37.0,127.5
+Germany,Immigrants,Both,Greece,1988,34123,Greece - Germany,51.5,10.5,39.0,22.0
+Germany,Immigrants,Both,Poland,1989,455075,Poland - Germany,51.5,10.5,52.0,20.0
+United States,Immigrants,Foreigners,Mexico,1989,405172,Mexico - United States,39.828175,-98.5795,23.0,-102.0
+Germany,Immigrants,Both,Turkey,1989,86643,Turkey - Germany,51.5,10.5,39.059012,34.911546
+United States,Immigrants,Foreigners,El Salvador,1989,57878,El Salvador - United States,39.828175,-98.5795,13.833333,-88.916667
+United States,Immigrants,Foreigners,Philippines,1989,57034,Philippines - United States,39.828175,-98.5795,13.0,122.0
+Australia,Immigrants,Both,United Kingdom,1989,44620,United Kingdom - Australia,-25.0,135.0,54.0,-4.0
+Germany,Immigrants,Both,Italy,1989,43061,Italy - Germany,51.5,10.5,42.833333,12.833333
+United States,Immigrants,Foreigners,Vietnam,1989,37739,Vietnam - United States,39.828175,-98.5795,16.166667,107.833333
+United States,Immigrants,Foreigners,"Korea, Rep.",1989,34222,"Korea, Rep. - United States",39.828175,-98.5795,37.0,127.5
+Australia,Immigrants,Both,New Zealand,1989,34060,New Zealand - Australia,-25.0,135.0,-42.0,174.0
+United States,Immigrants,Foreigners,Mexico,1990,679068,Mexico - United States,39.828175,-98.5795,23.0,-102.0
+Germany,Immigrants,Both,Poland,1990,300693,Poland - Germany,51.5,10.5,52.0,20.0
+Germany,Immigrants,Both,Romania,1990,174388,Romania - Germany,51.5,10.5,46.0,25.0
+Germany,Immigrants,Both,Turkey,1990,84592,Turkey - Germany,51.5,10.5,39.059012,34.911546
+United States,Immigrants,Foreigners,El Salvador,1990,80173,El Salvador - United States,39.828175,-98.5795,13.833333,-88.916667
+United States,Immigrants,Foreigners,Philippines,1990,63756,Philippines - United States,39.828175,-98.5795,13.0,122.0
+United States,Immigrants,Foreigners,Vietnam,1990,48792,Vietnam - United States,39.828175,-98.5795,16.166667,107.833333
+Australia,Immigrants,Both,United Kingdom,1990,45860,United Kingdom - Australia,-25.0,135.0,54.0,-4.0
+United States,Immigrants,Foreigners,Dominican Republic,1990,42195,Dominican Republic - United States,39.828175,-98.5795,19.0,-70.666667
+Germany,Immigrants,Both,Italy,1990,39679,Italy - Germany,51.5,10.5,42.833333,12.833333
+United States,Immigrants,Foreigners,Mexico,1991,946167,Mexico - United States,39.828175,-98.5795,23.0,-102.0
+Russian Federation,Immigrants,Both,Ukraine,1991,210121,Ukraine - Russian Federation,60.0,100.0,49.0,32.0
+Germany,Immigrants,Both,Poland,1991,145663,Poland - Germany,51.5,10.5,52.0,20.0
+Russian Federation,Immigrants,Both,Kazakhstan,1991,128906,Kazakhstan - Russian Federation,60.0,100.0,48.0,68.0
+Germany,Immigrants,Both,Romania,1991,84165,Romania - Germany,51.5,10.5,46.0,25.0
+Germany,Immigrants,Both,Turkey,1991,82818,Turkey - Germany,51.5,10.5,39.059012,34.911546
+Russian Federation,Immigrants,Both,Uzbekistan,1991,69149,Uzbekistan - Russian Federation,60.0,100.0,41.707542,63.84911
+United States,Immigrants,Foreigners,Philippines,1991,63596,Philippines - United States,39.828175,-98.5795,13.0,122.0
+United States,Immigrants,Foreigners,Vietnam,1991,55307,Vietnam - United States,39.828175,-98.5795,16.166667,107.833333
+Russian Federation,Immigrants,Both,Azerbaijan,1991,47951,Azerbaijan - Russian Federation,60.0,100.0,40.5,47.5
+United States,Immigrants,Foreigners,Mexico,1992,213802,Mexico - United States,39.828175,-98.5795,23.0,-102.0
+Russian Federation,Immigrants,Both,Ukraine,1992,199355,Ukraine - Russian Federation,60.0,100.0,49.0,32.0
+Russian Federation,Immigrants,Both,Kazakhstan,1992,183891,Kazakhstan - Russian Federation,60.0,100.0,48.0,68.0
+Germany,Immigrants,Both,Poland,1992,143709,Poland - Germany,51.5,10.5,52.0,20.0
+Germany,Immigrants,Both,Romania,1992,121291,Romania - Germany,51.5,10.5,46.0,25.0
+Russian Federation,Immigrants,Both,Uzbekistan,1992,112442,Uzbekistan - Russian Federation,60.0,100.0,41.707542,63.84911
+Germany,Immigrants,Both,Kazakhstan,1992,86864,Kazakhstan - Germany,51.5,10.5,48.0,68.0
+Germany,Immigrants,Both,Russian Federation,1992,84509,Russian Federation - Germany,51.5,10.5,60.0,100.0
+Germany,Immigrants,Both,Turkey,1992,81404,Turkey - Germany,51.5,10.5,39.059012,34.911546
+United States,Immigrants,Foreigners,Vietnam,1992,77735,Vietnam - United States,39.828175,-98.5795,16.166667,107.833333
+Russian Federation,Immigrants,Both,Kazakhstan,1993,195672,Kazakhstan - Russian Federation,60.0,100.0,48.0,68.0
+Russian Federation,Immigrants,Both,Ukraine,1993,189409,Ukraine - Russian Federation,60.0,100.0,49.0,32.0
+United States,Immigrants,Foreigners,Mexico,1993,126561,Mexico - United States,39.828175,-98.5795,23.0,-102.0
+Germany,Immigrants,Both,Bosnia and Herzegovina,1993,107422,Bosnia and Herzegovina - Germany,51.5,10.5,44.25,17.833333
+Germany,Immigrants,Both,Kazakhstan,1993,107076,Kazakhstan - Germany,51.5,10.5,48.0,68.0
+Russian Federation,Immigrants,Both,Kyrgyz Republic,1993,96814,Kyrgyz Republic - Russian Federation,60.0,100.0,41.0,75.0
+Russian Federation,Immigrants,Both,Uzbekistan,1993,91164,Uzbekistan - Russian Federation,60.0,100.0,41.707542,63.84911
+Germany,Immigrants,Both,Romania,1993,86559,Romania - Germany,51.5,10.5,46.0,25.0
+Germany,Immigrants,Both,Russian Federation,1993,85451,Russian Federation - Germany,51.5,10.5,60.0,100.0
+Germany,Immigrants,Both,Poland,1993,81740,Poland - Germany,51.5,10.5,52.0,20.0
+Russian Federation,Immigrants,Both,Kazakhstan,1994,346363,Kazakhstan - Russian Federation,60.0,100.0,48.0,68.0
+Russian Federation,Immigrants,Both,Ukraine,1994,247351,Ukraine - Russian Federation,60.0,100.0,49.0,32.0
+Russian Federation,Immigrants,Both,Uzbekistan,1994,146670,Uzbekistan - Russian Federation,60.0,100.0,41.707542,63.84911
+United States,Immigrants,Foreigners,Mexico,1994,111398,Mexico - United States,39.828175,-98.5795,23.0,-102.0
+Russian Federation,Immigrants,Both,Georgia,1994,66847,Georgia - Russian Federation,60.0,100.0,41.999981,43.499905
+Russian Federation,Immigrants,Both,Kyrgyz Republic,1994,66489,Kyrgyz Republic - Russian Federation,60.0,100.0,41.0,75.0
+United States,Immigrants,Foreigners,China,1994,53985,China - United States,39.828175,-98.5795,35.0,105.0
+United States,Immigrants,Foreigners,Philippines,1994,53535,Philippines - United States,39.828175,-98.5795,13.0,122.0
+United States,Immigrants,Foreigners,Dominican Republic,1994,51189,Dominican Republic - United States,39.828175,-98.5795,19.0,-70.666667
+Russian Federation,Immigrants,Both,Azerbaijan,1994,49495,Azerbaijan - Russian Federation,60.0,100.0,40.5,47.5
+Russian Federation,Immigrants,Both,Kazakhstan,1995,241427,Kazakhstan - Russian Federation,60.0,100.0,48.0,68.0
+Russian Federation,Immigrants,Both,Ukraine,1995,188443,Ukraine - Russian Federation,60.0,100.0,49.0,32.0
+Germany,Immigrants,Both,Kazakhstan,1995,123277,Kazakhstan - Germany,51.5,10.5,48.0,68.0
+Russian Federation,Immigrants,Both,Uzbekistan,1995,112312,Uzbekistan - Russian Federation,60.0,100.0,41.707542,63.84911
+Germany,Immigrants,Both,Russian Federation,1995,107377,Russian Federation - Germany,51.5,10.5,60.0,100.0
+Germany,Immigrants,Both,Poland,1995,99706,Poland - Germany,51.5,10.5,52.0,20.0
+United States,Immigrants,Foreigners,Mexico,1995,89932,Mexico - United States,39.828175,-98.5795,23.0,-102.0
+Germany,Immigrants,Both,Turkey,1995,74558,Turkey - Germany,51.5,10.5,39.059012,34.911546
+Germany,Immigrants,Both,Bosnia and Herzegovina,1995,55473,Bosnia and Herzegovina - Germany,51.5,10.5,44.25,17.833333
+Russian Federation,Immigrants,Both,Georgia,1995,51412,Georgia - Russian Federation,60.0,100.0,41.999981,43.499905
+Russian Federation,Immigrants,Both,Kazakhstan,1996,172860,Kazakhstan - Russian Federation,60.0,100.0,48.0,68.0
+Russian Federation,Immigrants,Both,Ukraine,1996,170928,Ukraine - Russian Federation,60.0,100.0,49.0,32.0
+United States,Immigrants,Foreigners,Mexico,1996,163556,Mexico - United States,39.828175,-98.5795,23.0,-102.0
+Germany,Immigrants,Both,Kazakhstan,1996,98137,Kazakhstan - Germany,51.5,10.5,48.0,68.0
+Germany,Immigrants,Both,Poland,1996,91314,Poland - Germany,51.5,10.5,52.0,20.0
+Germany,Immigrants,Both,Russian Federation,1996,83378,Russian Federation - Germany,51.5,10.5,60.0,100.0
+Germany,Immigrants,Both,Turkey,1996,74344,Turkey - Germany,51.5,10.5,39.059012,34.911546
+United States,Immigrants,Foreigners,Philippines,1996,55868,Philippines - United States,39.828175,-98.5795,13.0,122.0
+Russian Federation,Immigrants,Both,Uzbekistan,1996,49970,Uzbekistan - Russian Federation,60.0,100.0,41.707542,63.84911
+Germany,Immigrants,Both,Italy,1996,48510,Italy - Germany,51.5,10.5,42.833333,12.833333
+Russian Federation,Immigrants,Both,Kazakhstan,1997,235903,Kazakhstan - Russian Federation,60.0,100.0,48.0,68.0
+United States,Immigrants,Foreigners,Mexico,1997,146833,Mexico - United States,39.828175,-98.5795,23.0,-102.0
+Russian Federation,Immigrants,Both,Ukraine,1997,138231,Ukraine - Russian Federation,60.0,100.0,49.0,32.0
+Germany,Immigrants,Both,Poland,1997,85615,Poland - Germany,51.5,10.5,52.0,20.0
+Germany,Immigrants,Both,Kazakhstan,1997,83242,Kazakhstan - Germany,51.5,10.5,48.0,68.0
+Germany,Immigrants,Both,Russian Federation,1997,67178,Russian Federation - Germany,51.5,10.5,60.0,100.0
+Germany,Immigrants,Both,Turkey,1997,57148,Turkey - Germany,51.5,10.5,39.059012,34.911546
+United States,Immigrants,Foreigners,Philippines,1997,49102,Philippines - United States,39.828175,-98.5795,13.0,122.0
+Croatia,Immigrants,Both,Bosnia and Herzegovina,1997,42889,Bosnia and Herzegovina - Croatia,45.166667,15.5,44.25,17.833333
+Australia,Immigrants,Both,United Kingdom,1997,42010,United Kingdom - Australia,-25.0,135.0,54.0,-4.0
+Russian Federation,Immigrants,Both,Kazakhstan,1998,209880,Kazakhstan - Russian Federation,60.0,100.0,48.0,68.0
+United States,Immigrants,Foreigners,Mexico,1998,131353,Mexico - United States,39.828175,-98.5795,23.0,-102.0
+Russian Federation,Immigrants,Both,Ukraine,1998,111934,Ukraine - Russian Federation,60.0,100.0,49.0,32.0
+Germany,Immigrants,Both,Poland,1998,82049,Poland - Germany,51.5,10.5,52.0,20.0
+Germany,Immigrants,Both,Russian Federation,1998,58633,Russian Federation - Germany,51.5,10.5,60.0,100.0
+Germany,Immigrants,Both,Kazakhstan,1998,56128,Kazakhstan - Germany,51.5,10.5,48.0,68.0
+Germany,Immigrants,Both,Turkey,1998,49091,Turkey - Germany,51.5,10.5,39.059012,34.911546
+Australia,Immigrants,Both,United Kingdom,1998,42700,United Kingdom - Australia,-25.0,135.0,54.0,-4.0
+Russian Federation,Immigrants,Both,Uzbekistan,1998,41800,Uzbekistan - Russian Federation,60.0,100.0,41.707542,63.84911
+Germany,Immigrants,Both,Italy,1998,37660,Italy - Germany,51.5,10.5,42.833333,12.833333
+United States,Immigrants,Foreigners,Mexico,1999,147402,Mexico - United States,39.828175,-98.5795,23.0,-102.0
+Russian Federation,Immigrants,Both,Kazakhstan,1999,138521,Kazakhstan - Russian Federation,60.0,100.0,48.0,68.0
+Germany,Immigrants,Both,Poland,1999,90168,Poland - Germany,51.5,10.5,52.0,20.0
+Russian Federation,Immigrants,Both,Ukraine,1999,81297,Ukraine - Russian Federation,60.0,100.0,49.0,32.0
+Germany,Immigrants,Both,Russian Federation,1999,67734,Russian Federation - Germany,51.5,10.5,60.0,100.0
+Germany,Immigrants,Both,Kazakhstan,1999,54054,Kazakhstan - Germany,51.5,10.5,48.0,68.0
+Australia,Immigrants,Both,United Kingdom,1999,49310,United Kingdom - Australia,-25.0,135.0,54.0,-4.0
+Germany,Immigrants,Both,Turkey,1999,48383,Turkey - Germany,51.5,10.5,39.059012,34.911546
+Russian Federation,Immigrants,Both,Uzbekistan,1999,41615,Uzbekistan - Russian Federation,60.0,100.0,41.707542,63.84911
+Australia,Immigrants,Both,New Zealand,1999,40200,New Zealand - Australia,-25.0,135.0,-42.0,174.0
+United States,Immigrants,Foreigners,Mexico,2000,173493,Mexico - United States,39.828175,-98.5795,23.0,-102.0
+Russian Federation,Immigrants,Both,Kazakhstan,2000,124903,Kazakhstan - Russian Federation,60.0,100.0,48.0,68.0
+Germany,Immigrants,Both,Poland,2000,94105,Poland - Germany,51.5,10.5,52.0,20.0
+Spain,Immigrants,Both,Ecuador,2000,91655,Ecuador - Spain,40.0,-4.0,-2.0,-77.5
+Russian Federation,Immigrants,Both,Ukraine,2000,74748,Ukraine - Russian Federation,60.0,100.0,49.0,32.0
+Germany,Immigrants,Both,Russian Federation,2000,72152,Russian Federation - Germany,51.5,10.5,60.0,100.0
+Germany,Immigrants,Both,Kazakhstan,2000,54906,Kazakhstan - Germany,51.5,10.5,48.0,68.0
+Australia,Immigrants,Both,United Kingdom,2000,51000,United Kingdom - Australia,-25.0,135.0,54.0,-4.0
+Germany,Immigrants,Both,Turkey,2000,50499,Turkey - Germany,51.5,10.5,39.059012,34.911546
+Australia,Immigrants,Both,New Zealand,2000,47230,New Zealand - Australia,-25.0,135.0,-42.0,174.0
+United States,Immigrants,Foreigners,Mexico,2001,205560,Mexico - United States,39.828175,-98.5795,23.0,-102.0
+Germany,Immigrants,Both,Poland,2001,100522,Poland - Germany,51.5,10.5,52.0,20.0
+Spain,Immigrants,Both,Ecuador,2001,82742,Ecuador - Spain,40.0,-4.0,-2.0,-77.5
+Spain,Immigrants,Both,Colombia,2001,71575,Colombia - Spain,40.0,-4.0,4.0,-72.0
+United States,Immigrants,Foreigners,India,2001,70032,India - United States,39.828175,-98.5795,20.0,77.0
+Russian Federation,Immigrants,Both,Kazakhstan,2001,65226,Kazakhstan - Russian Federation,60.0,100.0,48.0,68.0
+United States,Immigrants,Foreigners,China,2001,56267,China - United States,39.828175,-98.5795,35.0,105.0
+Australia,Immigrants,Both,United Kingdom,2001,52940,United Kingdom - Australia,-25.0,135.0,54.0,-4.0
+United States,Immigrants,Foreigners,Philippines,2001,52919,Philippines - United States,39.828175,-98.5795,13.0,122.0
+Australia,Immigrants,Both,New Zealand,2001,45570,New Zealand - Australia,-25.0,135.0,-42.0,174.0
+United States,Immigrants,Foreigners,Mexico,2002,218822,Mexico - United States,39.828175,-98.5795,23.0,-102.0
+Germany,Immigrants,Both,Poland,2002,100968,Poland - Germany,51.5,10.5,52.0,20.0
+Spain,Immigrants,Both,Ecuador,2002,89249,Ecuador - Spain,40.0,-4.0,-2.0,-77.5
+Germany,Immigrants,Both,Russian Federation,2002,77403,Russian Federation - Germany,51.5,10.5,60.0,100.0
+United States,Immigrants,Foreigners,India,2002,70823,India - United States,39.828175,-98.5795,20.0,77.0
+United States,Immigrants,Foreigners,China,2002,61082,China - United States,39.828175,-98.5795,35.0,105.0
+Germany,Immigrants,Both,Turkey,2002,58648,Turkey - Germany,51.5,10.5,39.059012,34.911546
+Australia,Immigrants,Both,United Kingdom,2002,57330,United Kingdom - Australia,-25.0,135.0,54.0,-4.0
+Russian Federation,Immigrants,Both,Kazakhstan,2002,55706,Kazakhstan - Russian Federation,60.0,100.0,48.0,68.0
+United States,Immigrants,Foreigners,Philippines,2002,51040,Philippines - United States,39.828175,-98.5795,13.0,122.0
+United States,Immigrants,Foreigners,Mexico,2003,115585,Mexico - United States,39.828175,-98.5795,23.0,-102.0
+Italy,Immigrants,Both,Romania,2003,78814,Romania - Italy,42.833333,12.833333,46.0,25.0
+Spain,Immigrants,Both,Ecuador,2003,73139,Ecuador - Spain,40.0,-4.0,-2.0,-77.5
+Australia,Immigrants,Both,United Kingdom,2003,70150,United Kingdom - Australia,-25.0,135.0,54.0,-4.0
+Spain,Immigrants,Both,Romania,2003,55294,Romania - Spain,40.0,-4.0,46.0,25.0
+United States,Immigrants,Foreigners,India,2003,50228,India - United States,39.828175,-98.5795,20.0,77.0
+Italy,Immigrants,Both,Albania,2003,49524,Albania - Italy,42.833333,12.833333,41.0,20.0
+United States,Immigrants,Foreigners,Philippines,2003,45250,Philippines - United States,39.828175,-98.5795,13.0,122.0
+Italy,Immigrants,Both,Ukraine,2003,44195,Ukraine - Italy,42.833333,12.833333,49.0,32.0
+Spain,Immigrants,Both,Morocco,2003,41401,Morocco - Spain,40.0,-4.0,32.0,-5.0
+United States,Immigrants,Foreigners,Mexico,2004,175411,Mexico - United States,39.828175,-98.5795,23.0,-102.0
+Germany,Immigrants,Both,Poland,2004,139283,Poland - Germany,51.5,10.5,52.0,20.0
+Spain,Immigrants,Both,Romania,2004,89620,Romania - Spain,40.0,-4.0,46.0,25.0
+United States,Immigrants,Foreigners,India,2004,70151,India - United States,39.828175,-98.5795,20.0,77.0
+Italy,Immigrants,Both,Romania,2004,67148,Romania - Italy,42.833333,12.833333,46.0,25.0
+Spain,Immigrants,Both,Morocco,2004,59295,Morocco - Spain,40.0,-4.0,32.0,-5.0
+Germany,Immigrants,Both,Russian Federation,2004,58594,Russian Federation - Germany,51.5,10.5,60.0,100.0
+United States,Immigrants,Foreigners,Philippines,2004,57846,Philippines - United States,39.828175,-98.5795,13.0,122.0
+United States,Immigrants,Foreigners,China,2004,55494,China - United States,39.828175,-98.5795,35.0,105.0
+Australia,Immigrants,Both,United Kingdom,2004,53140,United Kingdom - Australia,-25.0,135.0,54.0,-4.0
+United States,Immigrants,Foreigners,Mexico,2005,161445,Mexico - United States,39.828175,-98.5795,23.0,-102.0
+Germany,Immigrants,Both,Poland,2005,159157,Poland - Germany,51.5,10.5,52.0,20.0
+Spain,Immigrants,Both,Romania,2005,94084,Romania - Spain,40.0,-4.0,46.0,25.0
+United States,Immigrants,Foreigners,India,2005,84680,India - United States,39.828175,-98.5795,20.0,77.0
+United States,Immigrants,Foreigners,China,2005,69933,China - United States,39.828175,-98.5795,35.0,105.0
+Spain,Immigrants,Both,Morocco,2005,69757,Morocco - Spain,40.0,-4.0,32.0,-5.0
+United States,Immigrants,Foreigners,Philippines,2005,60746,Philippines - United States,39.828175,-98.5795,13.0,122.0
+Australia,Immigrants,Both,United Kingdom,2005,53300,United Kingdom - Australia,-25.0,135.0,54.0,-4.0
+Russian Federation,Immigrants,Both,Kazakhstan,2005,51945,Kazakhstan - Russian Federation,60.0,100.0,48.0,68.0
+United Kingdom,Immigrants,Both,Poland,2005,51915,Poland - United Kingdom,54.0,-4.0,52.0,20.0
+United States,Immigrants,Foreigners,Mexico,2006,173749,Mexico - United States,39.828175,-98.5795,23.0,-102.0
+Germany,Immigrants,Both,Poland,2006,163643,Poland - Germany,51.5,10.5,52.0,20.0
+Spain,Immigrants,Both,Romania,2006,111981,Romania - Spain,40.0,-4.0,46.0,25.0
+United States,Immigrants,Foreigners,China,2006,87307,China - United States,39.828175,-98.5795,35.0,105.0
+United States,Immigrants,Foreigners,Philippines,2006,74606,Philippines - United States,39.828175,-98.5795,13.0,122.0
+Spain,Immigrants,Both,Bolivia,2006,69796,Bolivia - Spain,40.0,-4.0,-17.0,-65.0
+Spain,Immigrants,Both,Morocco,2006,61375,Morocco - Spain,40.0,-4.0,32.0,-5.0
+United States,Immigrants,Foreigners,India,2006,61369,India - United States,39.828175,-98.5795,20.0,77.0
+United Kingdom,Immigrants,Both,Poland,2006,58468,Poland - United Kingdom,54.0,-4.0,52.0,20.0
+Australia,Immigrants,Both,United Kingdom,2006,57250,United Kingdom - Australia,-25.0,135.0,54.0,-4.0
+Italy,Immigrants,Both,Romania,2007,274007,Romania - Italy,42.833333,12.833333,46.0,25.0
+Spain,Immigrants,Both,Romania,2007,174217,Romania - Spain,40.0,-4.0,46.0,25.0
+Germany,Immigrants,Both,Poland,2007,153589,Poland - Germany,51.5,10.5,52.0,20.0
+United States,Immigrants,Foreigners,Mexico,2007,148640,Mexico - United States,39.828175,-98.5795,23.0,-102.0
+United States,Immigrants,Foreigners,China,2007,76655,China - United States,39.828175,-98.5795,35.0,105.0
+United States,Immigrants,Foreigners,Philippines,2007,72596,Philippines - United States,39.828175,-98.5795,13.0,122.0
+Spain,Immigrants,Both,Morocco,2007,71916,Morocco - Spain,40.0,-4.0,32.0,-5.0
+United States,Immigrants,Foreigners,India,2007,65353,India - United States,39.828175,-98.5795,20.0,77.0
+Australia,Immigrants,Both,United Kingdom,2007,61490,United Kingdom - Australia,-25.0,135.0,54.0,-4.0
+Russian Federation,Immigrants,Both,Uzbekistan,2007,52802,Uzbekistan - Russian Federation,60.0,100.0,41.707542,63.84911
+United States,Immigrants,Foreigners,Mexico,2008,189989,Mexico - United States,39.828175,-98.5795,23.0,-102.0
+Italy,Immigrants,Both,Romania,2008,175907,Romania - Italy,42.833333,12.833333,46.0,25.0
+Germany,Immigrants,Both,Poland,2008,131308,Poland - Germany,51.5,10.5,52.0,20.0
+United States,Immigrants,Foreigners,China,2008,80271,China - United States,39.828175,-98.5795,35.0,105.0
+Spain,Immigrants,Both,Morocco,2008,71663,Morocco - Spain,40.0,-4.0,32.0,-5.0
+Australia,Immigrants,Both,United Kingdom,2008,65160,United Kingdom - Australia,-25.0,135.0,54.0,-4.0
+United States,Immigrants,Foreigners,India,2008,63352,India - United States,39.828175,-98.5795,20.0,77.0
+Spain,Immigrants,Both,Romania,2008,61034,Romania - Spain,40.0,-4.0,46.0,25.0
+United Kingdom,Immigrants,Both,Poland,2008,60105,Poland - United Kingdom,54.0,-4.0,52.0,20.0
+Australia,Immigrants,Both,India,2008,58400,India - Australia,-25.0,135.0,20.0,77.0
+United States,Immigrants,Foreigners,Mexico,2009,164920,Mexico - United States,39.828175,-98.5795,23.0,-102.0
+Italy,Immigrants,Both,Romania,2009,106352,Romania - Italy,42.833333,12.833333,46.0,25.0
+United Kingdom,Immigrants,Both,India,2009,67086,India - United Kingdom,54.0,-4.0,20.0,77.0
+United States,Immigrants,Foreigners,China,2009,64238,China - United States,39.828175,-98.5795,35.0,105.0
+United States,Immigrants,Foreigners,Philippines,2009,60029,Philippines - United States,39.828175,-98.5795,13.0,122.0
+United States,Immigrants,Foreigners,India,2009,57304,India - United States,39.828175,-98.5795,20.0,77.0
+United States,Immigrants,Foreigners,Dominican Republic,2009,49414,Dominican Republic - United States,39.828175,-98.5795,19.0,-70.666667
+Russian Federation,Immigrants,Both,Ukraine,2009,45920,Ukraine - Russian Federation,60.0,100.0,49.0,32.0
+Spain,Immigrants,Both,Romania,2009,43991,Romania - Spain,40.0,-4.0,46.0,25.0
+Spain,Immigrants,Both,Morocco,2009,43441,Morocco - Spain,40.0,-4.0,32.0,-5.0
+United States,Immigrants,Foreigners,Mexico,2010,139120,Mexico - United States,39.828175,-98.5795,23.0,-102.0
+Italy,Immigrants,Both,Romania,2010,92591,Romania - Italy,42.833333,12.833333,46.0,25.0
+United States,Immigrants,Foreigners,China,2010,70863,China - United States,39.828175,-98.5795,35.0,105.0
+United Kingdom,Immigrants,Both,India,2010,70809,India - United Kingdom,54.0,-4.0,20.0,77.0
+United States,Immigrants,Foreigners,India,2010,69162,India - United States,39.828175,-98.5795,20.0,77.0
+United States,Immigrants,Foreigners,Philippines,2010,58173,Philippines - United States,39.828175,-98.5795,13.0,122.0
+United States,Immigrants,Foreigners,Dominican Republic,2010,53870,Dominican Republic - United States,39.828175,-98.5795,19.0,-70.666667
+Spain,Immigrants,Both,Romania,2010,51823,Romania - Spain,40.0,-4.0,46.0,25.0
+Canada,Immigrants,Foreigners,Philippines,2010,38617,Philippines - Canada,60.0,-96.0,13.0,122.0
+Canada,Immigrants,Foreigners,India,2010,34235,India - Canada,60.0,-96.0,20.0,77.0
+United States,Immigrants,Foreigners,Mexico,2011,143446,Mexico - United States,39.828175,-98.5795,23.0,-102.0
+Italy,Immigrants,Both,Romania,2011,90136,Romania - Italy,42.833333,12.833333,46.0,25.0
+United States,Immigrants,Foreigners,China,2011,87016,China - United States,39.828175,-98.5795,35.0,105.0
+United States,Immigrants,Foreigners,India,2011,69013,India - United States,39.828175,-98.5795,20.0,77.0
+United Kingdom,Immigrants,Both,India,2011,64608,India - United Kingdom,54.0,-4.0,20.0,77.0
+United States,Immigrants,Foreigners,Philippines,2011,57011,Philippines - United States,39.828175,-98.5795,13.0,122.0
+Spain,Immigrants,Both,Romania,2011,50748,Romania - Spain,40.0,-4.0,46.0,25.0
+United Kingdom,Immigrants,Both,China,2011,47030,China - United Kingdom,54.0,-4.0,35.0,105.0
+United States,Immigrants,Foreigners,Dominican Republic,2011,46109,Dominican Republic - United States,39.828175,-98.5795,19.0,-70.666667
+Canada,Immigrants,Foreigners,Philippines,2011,36765,Philippines - Canada,60.0,-96.0,13.0,122.0
+United States,Immigrants,Foreigners,Mexico,2012,146406,Mexico - United States,39.828175,-98.5795,23.0,-102.0
+United States,Immigrants,Foreigners,China,2012,81784,China - United States,39.828175,-98.5795,35.0,105.0
+Italy,Immigrants,Both,Romania,2012,80080,Romania - Italy,42.833333,12.833333,46.0,25.0
+United States,Immigrants,Foreigners,India,2012,66434,India - United States,39.828175,-98.5795,20.0,77.0
+United States,Immigrants,Foreigners,Philippines,2012,57327,Philippines - United States,39.828175,-98.5795,13.0,122.0
+United Kingdom,Immigrants,Both,China,2012,50031,China - United Kingdom,54.0,-4.0,35.0,105.0
+United States,Immigrants,Foreigners,Dominican Republic,2012,41566,Dominican Republic - United States,39.828175,-98.5795,19.0,-70.666667
+United Kingdom,Immigrants,Both,India,2012,39596,India - United Kingdom,54.0,-4.0,20.0,77.0
+Canada,Immigrants,Foreigners,Philippines,2012,34315,Philippines - Canada,60.0,-96.0,13.0,122.0
+Canada,Immigrants,Foreigners,China,2012,33024,China - Canada,60.0,-96.0,35.0,105.0
+United States,Immigrants,Foreigners,Mexico,2013,135028,Mexico - United States,39.828175,-98.5795,23.0,-102.0
+United States,Immigrants,Foreigners,China,2013,71798,China - United States,39.828175,-98.5795,35.0,105.0
+United States,Immigrants,Foreigners,India,2013,68458,India - United States,39.828175,-98.5795,20.0,77.0
+Italy,Immigrants,Both,Romania,2013,59347,Romania - Italy,42.833333,12.833333,46.0,25.0
+United States,Immigrants,Foreigners,Philippines,2013,54446,Philippines - United States,39.828175,-98.5795,13.0,122.0
+United Kingdom,Immigrants,Both,China,2013,50444,China - United Kingdom,54.0,-4.0,35.0,105.0
+United States,Immigrants,Foreigners,Dominican Republic,2013,41311,Dominican Republic - United States,39.828175,-98.5795,19.0,-70.666667
+United Kingdom,Immigrants,Both,India,2013,35418,India - United Kingdom,54.0,-4.0,20.0,77.0
+United Kingdom,Immigrants,Both,Spain,2013,34489,Spain - United Kingdom,54.0,-4.0,40.0,-4.0
+Canada,Immigrants,Foreigners,China,2013,34129,China - Canada,60.0,-96.0,35.0,105.0
