@@ -17,3 +17,9 @@ http://stackoverflow.com/questions/33830055/d3js-adding-an-arrow-head-to-a-line
 
 Executing one function after the other:
 http://stackoverflow.com/questions/5187968/how-should-i-call-3-functions-in-order-to-execute-them-one-after-the-other
+
+Continent information:
+https://www.worlddata.info/downloads/
+
+Slider:
+https://bl.ocks.org/shancarter/5979700

@@ -48,10 +48,11 @@ a {
   stroke: #000;
   shape-rendering: crispEdges;
 }
+/*
 .y.axis path, .y.axis line {
   stroke: none;
 }
-
+*/
 .axis text {
   font-size: 0.8em
 }
@@ -59,22 +60,21 @@ a {
 .bar{
 	fill: RGB(220,220,220);
 }
-
-/*map related*/
+.selected-bar{
+	fill: red;
+}
+/*Map related*/
 .country{
 	fill: RGB(220,220,220);
 	stroke: black;
 	stroke-width: 0.2;
 }
-
-.selected{
-	fill: red;
-}
 .selected-country{
-	fill: RGB(150,150,150);
+	fill: RGB(180,180,180);
 }
 .flow{
-	/*stroke-width: 1;*/
 	stroke: black;
-	/*stroke-opacity: 0.5;*/
+}
+.selected-flow{
+	stroke: red;
 }
