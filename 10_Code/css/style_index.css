@@ -42,39 +42,40 @@ a {
   }
   
 /*D3 part */
+.legend rect {
+  fill: white;
+  stroke: black;
+  opacity: 0.8;}
 
 .axis path, .axis line {
-  fill: none;
-  stroke: #000;
+  fill: black;
+  stroke: black;
+  stroke-width: 1.5;
   shape-rendering: crispEdges;
 }
-/*
-.y.axis path, .y.axis line {
-  stroke: none;
+
+.circle{
+	opacity: 0.5;
 }
-*/
+
+.selected-circle{
+	opacity: 0.8;
+}
+
 .axis text {
   font-size: 0.8em
 }
 
+.mouseover_text {
+	font-family: sans-serif;
+	font-size: 10px;
+	fill: black;
+}
+
+/*Bars*/
 .bar{
-	fill: RGB(220,220,220);
+	opacity: 0.5
 }
 .selected-bar{
-	fill: red;
-}
-/*Map related*/
-.country{
-	fill: RGB(220,220,220);
-	stroke: black;
-	stroke-width: 0.2;
-}
-.selected-country{
-	fill: RGB(180,180,180);
-}
-.flow{
-	stroke: black;
-}
-.selected-flow{
-	stroke: red;
+	opacity: 0.8;
 }

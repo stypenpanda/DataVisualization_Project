@@ -10,7 +10,7 @@ $('#year_selector').html(select);
 //1 - The following is for the bar chart////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////////////////////
 //Set the margins
-var outerWidth = 400;
+var outerWidth = 500;
 var outerHeight = 400;
 var margin = { left: 200, top: 0, right: 5, bottom: 30 };
 var barPadding = 0.2;
@@ -50,25 +50,25 @@ var yAxis = d3.svg.axis().scale(yScale).orient("left")
 	.outerTickSize(0);          // Turn off the marks at the end of the axis.
 
 function render(data){
-  //adjust axes
-  xScale.domain([0, maxMigrationCtryToCtry]);
-  yScale.domain(data.map( function (d){ return d[yColumn]; }));
-  xAxisG.call(xAxis);
-  yAxisG.call(yAxis);
-  //bind data
-  var bars = g.selectAll("rect").data(data);
-  //enter
-  bars.enter().append("rect")
-    .attr("height", yScale.rangeBand())
-    .attr("class", "bar")
-	.on("mouseover", function(){
-		d3.select(this).classed("selected-bar", true);
-		var cId = d3.select(this).attr("id");
-		svgGeo.select("#" + cId + "1")
-				.classed("selected-flow", true)
-				.attr("marker-end", "url(#arrowhead-selected)");
-		//var selStroke = svgGeo.select()
-	})
+	//adjust axes
+	xScale.domain([0, maxMigrationCtryToCtry]);
+	yScale.domain(data.map( function (d){ return d[yColumn]; }));
+	xAxisG.call(xAxis);
+	yAxisG.call(yAxis);
+	//bind data
+	var bars = g.selectAll("rect").data(data);
+	//enter
+	bars.enter().append("rect")
+		.attr("height", yScale.rangeBand())
+		.attr("class", "bar")
+		.on("mouseover", function(){
+			d3.select(this).classed("selected-bar", true);
+			var cId = d3.select(this).attr("id");
+			svgGeo.select("#" + cId + "1")
+					.classed("selected-flow", true)
+					.attr("marker-end", "url(#arrowhead-selected)");
+			//var selStroke = svgGeo.select()
+		})
 	.on("mouseout", function(){
 		d3.select(this).classed("selected-bar", false);
 		var cId = d3.select(this).attr("id");
@@ -76,14 +76,14 @@ function render(data){
 				.classed("selected-flow", false)
 				.attr("marker-end", "url(#arrowhead)");
 	});
-  //update
-  bars
-    .attr("x", 0)
-    .attr("y",     function (d){ return yScale(d[yColumn]); })
-    .attr("width", function (d){ return xScale(d[xColumn]); })
-	.attr("id", function (d){return d["ID"]});
-  //exit
-  bars.exit().remove();
+//update
+	bars
+		.attr("x", 0)
+		.attr("y",     function (d){ return yScale(d[yColumn]); })
+		.attr("width", function (d){ return xScale(d[xColumn]); })
+		.attr("id", function (d){return d["ID"]});
+	//exit
+	bars.exit().remove();
 }
 
 ////////////////////////////////////////////////////////////////////////////////////////////////	
@@ -94,10 +94,9 @@ function render(data){
 var outerWidthGeo = 800;
 var outerHeightGeo = 400;
 var marginGeo = { left: 200, top: 0, right: 5, bottom: 30 };
-var barPaddingGeo = 0.2;	
 var l2OffsetDistance = 30;
 var scaleStrokeWidth = d3.scale.linear().domain([0, 1000*1000])
-										.range([0.2, 6]);
+										.range([0.7, 11]);
 
 var innerWidthGeo  = outerWidthGeo  - marginGeo.left - marginGeo.right;
 var innerHeightGeo = outerHeightGeo - marginGeo.top  - marginGeo.bottom;
@@ -109,25 +108,25 @@ var svgGeo = d3.select("body").append("svg")
 //Define arrow head
 svgGeo.append("defs").append("marker")
     .attr("id", "arrowhead")
-    .attr("refX", 4)
-    .attr("refY", 2)
-    .attr("markerWidth", 6)
-    .attr("markerHeight", 4)
+    .attr("refX", 1)
+    .attr("refY", 1)
+    .attr("markerWidth", 3)
+    .attr("markerHeight", 2)
     .attr("orient", "auto")
     .append("path")
-    .attr("d", "M 0,0 V 4 L6,2 Z"); //this is actual shape for arrowhead
+    .attr("d", "M 0,0 V 2 L3,1 Z"); //this is actual shape for arrowhead
 
 svgGeo.append("defs").append("marker")
     .attr("id", "arrowhead-selected")
-    .attr("refX", 4)
-    .attr("refY", 2)
-	.attr("fill", "red")
-    .attr("markerWidth", 6)
-    .attr("markerHeight", 4)
+    .attr("refX", 1)
+    .attr("refY", 1)
+    .attr("markerWidth", 3)
+    .attr("markerHeight", 2)
     .attr("orient", "auto")
     .append("path")
-    .attr("d", "M 0,0 V 4 L6,2 Z");
-	
+    .attr("d", "M 0,0 V 2 L3,1 Z")
+	.attr("fill", "red");
+
 //Mapping to the SVG
 var projection = d3.geo.mercator()
 				   .scale(100)
@@ -162,18 +161,11 @@ function drawWorldMap(jsonName, callback){
 				.attr("font-family", "sans-serif")
 				.attr("font-size", "10px")
 				.attr("fill", "black");
-//			var tooltipDiv = document.getElementById('tooltip');
-//			tooltipDiv.innerHTML = this.id;
-//			tooltipDiv.style.top = current_position[1] + "px";
-//			tooltipDiv.style.left = current_position[0]+"px";
-//			tooltipDiv.style.display = "block";
 		})
 		.on('mouseout', function(d) {
 			// Remove the class "selected"
 			d3.select(this).classed("selected-country", false);
-			svgGeo.select("text").remove()
-//			var tooltipDiv = document.getElementById('tooltip');
-//			tooltipDiv.style.display = "none";
+			svgGeo.select("text").remove();
 		});
 		});
 	callback()
