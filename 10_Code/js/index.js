@@ -1,10 +1,6 @@
-//Generate dropdown list
-var select = '';
-for (i=1980;i<=2013;i++){
-	select += '<option val=' + i + '>' + i + '</option>';
-}
-$('#year_selector').html(select);
-//TODO: Think about a slider instead ...
+// Some initial variable definition
+var a = 1980;
+
 var xColumn = "Migrants_out",
 	yColumn = "Migrants_in",
 	zColumn = "Population";
@@ -19,8 +15,8 @@ colCon = {	"Australia": "green", "Europe": "blue",
 //1 - The following is for the first bar chart////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////////////////////
 //Set the margins
-var outerWidth2 = 500;
-var outerHeight2 = 500;
+var outerWidth2 = 400;
+var outerHeight2 = 450;
 var margin2 = { left: 150, top: 30, right: 100, bottom: 50 };
 var barPadding = 0.2;
 
@@ -32,9 +28,10 @@ var svg2 = d3.select("body").append("svg")
 	.attr("height", outerHeight2);
 
 svg2.append("text")
-	.text("# of immigrants in selected year")
-	.style("text-anchor", "right")
-	.attr("x", innerWidth2 / 2)
+	.text("# of immigrants " + a.toString())
+	.style("text-anchor", "middle")
+	.attr("id", "bar1Title")
+	.attr("x", outerWidth2 / 2)
 	.attr("y", 20)
 	.attr("font-weight", "bold");
 	
@@ -62,7 +59,7 @@ var xAxisLabel2 = xAxisG2.append("text")
 	.attr("x", innerWidth2 / 2)
 	.attr("y", 40)
 	.attr("class", "label")
-	.text("# of immigrants in selected year");			
+	.text("# of immigrants");			
 
 
 function renderImmigration(data){
@@ -133,8 +130,8 @@ function renderImmigration(data){
 //2 - The following is for the bubble chart////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////////////////////
 //Set the margins
-var outerWidth = 500;
-var outerHeight = 500;
+var outerWidth = 450;
+var outerHeight = 450;
 var margin = { left: 80, top: 30, right: 20, bottom: 50 };
 
 var innerWidth  = outerWidth  - margin.left - margin.right;
@@ -178,14 +175,14 @@ var xAxisLabel = xAxisG.append("text")
 	.attr("x", innerWidth / 2)
 	.attr("y", 40)
 	.attr("class", "label")
-	.text("# of emigrants in selected year [sqrt-scale]");	
+	.text("# of emigrants [sqrt-scale]");	
 	
 var yAxisLabel = yAxisG.append("text")
 	.style("text-anchor", "middle")
 	.attr("x", -(innerHeight / 2))
 	.attr("y", -50)
 	.attr("class", "label")
-	.text("# of immigrants in selected year [sqrt-scale]")
+	.text("# of immigrants [sqrt-scale]")
 	.attr("transform", "rotate(-90)");		
 	
 var xScale = d3.scale.sqrt().range([0, innerWidth]);
@@ -223,8 +220,8 @@ function render(data){
 		svg.append("text")
 			.text(ctryName)
 			.attr("class", "mouseover_text")
-			.attr("x", +current_position[0]+ rT)
-			.attr("y", +current_position[1]+ 	rT);
+			.attr("x", +current_position[0]- rT+40)
+			.attr("y", +current_position[1]- rT+25);
 		//The first bar chart
 		svg2.select("[country='" + ctryName + "']")
 			.classed("selected-bar", true);
@@ -254,21 +251,14 @@ function render(data){
 	.attr("fill", function(d) {return colCon[d["Continent"]]});
   //exit
   bubbles.exit().remove();
- /*
-  legend = svg.append("g")
-	  .attr("class","legend")
-	  .attr("transform","translate(50,30)")
-	  .style("font-size","12px")
-	  .call(d3.legend);
-	*/
 }
 
 ////////////////////////////////////////////////////////////////////////////////////////////////
 //3 - The following is for the second bar chart////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////////////////////
 //Set the margins
-var outerWidth3 = 500;
-var outerHeight3 = 500;
+var outerWidth3 = 400;
+var outerHeight3 = 450;
 var margin3 = { left: 150, top: 30, right: 20, bottom: 50 };
 var barPadding3 = 0.2;
 
@@ -280,9 +270,10 @@ var svg3 = d3.select("body").append("svg")
 	.attr("height", outerHeight2);
 
 svg3.append("text")
-	.text("# of emigrants in selected year")
-	.style("text-anchor", "right")
-	.attr("x", innerWidth3 / 2)
+	.text("# of emigrants " + a.toString())
+	.attr("id", "bar2Title")
+	.style("text-anchor", "middle")
+	.attr("x", outerWidth3 / 2)
 	.attr("y", 20)
 	.attr("font-weight", "bold");
 	
@@ -310,7 +301,7 @@ var xAxisLabel3 = xAxisG3.append("text")
 	.attr("x", innerWidth2 / 2 + 40)
 	.attr("y", 40)
 	.attr("class", "label")
-	.text("# of emigrants in selected year");			
+	.text("# of emigrants");			
 
 
 function renderEmigration(data){
@@ -328,6 +319,7 @@ function renderEmigration(data){
 	.on("mouseover", function(){
 		var sel = d3.select(this);
 		var ctryName = sel.attr("country");
+		var emigration = sel.attr(xColumn);
 		var hT = sel.attr("height");
 		var xT = +sel.attr("width") + margin2.left + 20;
 		var yT = +sel.attr("y") + margin2.top + hT/2;
@@ -342,6 +334,7 @@ function renderEmigration(data){
 			.classed("selected-bar", true);
 		//Display migration number
 		svg3.append("text")
+			.text(d3.format("s")(emigration))
 			.attr("class", "mouseover_text")
 			.attr("x", xT)
 			.attr("y", yT)
@@ -367,6 +360,7 @@ function renderEmigration(data){
     .attr("y",     function (d){ return yScale3(d["Country"]); })
 	.attr("country", function (d){ return d["Country"]; })
     .attr("height", yScale3.rangeBand())
+    .attr("width", function (d){ return xScale2(d[xColumn]); })
 	.attr("fill", function(d) {return colCon[d["Continent"]]})
 	.attr(xColumn, function (d){ return d[xColumn]; });
 	//exit
@@ -376,8 +370,6 @@ function renderEmigration(data){
 ////////////////////////////////////////////////////////////////////////////////////////////////	
 // 4 - General things happpening ///////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////////////////////
-var dropdown = document.getElementById("year_selector");
-var a = +dropdown.options[dropdown.selectedIndex].value;
 var dMigPerCtry, dCurrentSelection;
 
 function type(d){
@@ -420,29 +412,33 @@ d3.csv("BubbleChart.csv", type, function(d) {
 	renderEmigration(dCurSelEmigrants);
 
 });
-
-//Update graph when dropdown changes due to changes in selected data
-d3.select('#year_selector')
-  .on('change', function() {
-    a = +eval(d3.select(this).property('value'));
-    dCurrentSelection = dMigPerCtry.filter(function(data){
-			return  data["Year"] === a;
-			});
-	dCurBubble = dCurrentSelection.filter(function(data){
-			return data["Migrants_out"] > 0;
-		});
-	dCurBubble = dCurBubble.filter(function(data){
-			return data["Migrants_in"] > 0;
-		});
-	dCurSelImmigrants = dCurrentSelection.filter(function(data){
-			return data["Migrants_in"] > 0;
-		})
-		.sort(function(a,b) {return b["Migrants_in"] - a["Migrants_in"];});
-	dCurSelEmigrants = dCurrentSelection.filter(function(data){
-			return data["Migrants_out"] > 0;
-		})
-		.sort(function(a,b) {return b["Migrants_out"] - a["Migrants_out"];});
-	renderImmigration(dCurSelImmigrants);
-	render(dCurBubble);
-	renderEmigration(dCurSelEmigrants);
-	});
+d3.select('#div3').call(d3.slider()
+			.axis(true)
+			.min(1980).max(2013).step(1)
+			.on("slide", function(evt, value) {
+				a = +value;
+				dCurrentSelection = dMigPerCtry.filter(function(data){
+						return  data["Year"] === a;
+						});
+				dCurBubble = dCurrentSelection.filter(function(data){
+						return data["Migrants_out"] > 0;
+					});
+				dCurBubble = dCurBubble.filter(function(data){
+						return data["Migrants_in"] > 0;
+					});
+				dCurSelImmigrants = dCurrentSelection.filter(function(data){
+						return data["Migrants_in"] > 0;
+					})
+					.sort(function(a,b) {return b["Migrants_in"] - a["Migrants_in"];});
+				dCurSelEmigrants = dCurrentSelection.filter(function(data){
+						return data["Migrants_out"] > 0;
+					})
+					.sort(function(a,b) {return b["Migrants_out"] - a["Migrants_out"];});
+				renderImmigration(dCurSelImmigrants);
+				render(dCurBubble);
+				renderEmigration(dCurSelEmigrants);
+			d3.select("#bar1Title").text("# of immigrants " + a.toString());
+			d3.select("#bar2Title").text("# of emigrants " + a.toString());
+			d3.select("#bubbleTitle").text("# of immigrants " + a.toString());
+					})
+					);

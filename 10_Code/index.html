@@ -3,8 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <title>Global migration flows</title>
-  <link rel="stylesheet" href="css/style_index.css">  
+  <link rel="stylesheet" href="css/style.css">  
   <script src='http://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js'></script>	<!--D3-->
+  <script src='js/d3.slider.js'></script>
 </head>
 
 <body>
@@ -13,19 +14,36 @@
   </div>
   <div id="div2">
   <ul>
-      <li><a href="index.html">Net migration of countries</a></li>
+      <li><a href="#">Intro</a></li>
+      <li><a href="index.html">Migration of countries</a></li>
       <li><a href="Top10Yearly.html">Top 10 yearly migration flows</a></li>
-      <li><a href="#">Stats per country</a></li>
       <li><a href="#">Explanations</a></li>
     </ul>
   </div>
   <div id="div3">
-  Select the year
-	<select id="year_selector"></select>
   </div>
-  <script src='js/d3.slider.js'></script>
   <script src="http://www.google.com/jsapi" type="text/javascript"></script>		<!--Google Api for json-->
   <script type="text/javascript">google.load("jquery", "1.3.2");</script>			<!--Google Api for jquery-->
   <script src="js/Index.js"></script>
+  <div id="div4" style="text-align:center;">
+	<svg width="575" height="30">
+		<rect x="0" y="10" height="10" width="10" fill="blue" fill-opacity="0.5"></rect>
+		<rect x="10" y="10" height="10" width="10" fill="blue" fill-opacity="0.8"></rect>
+		<text x="25" y="15" text-anchor="left" alignment-baseline="central">Europe</text>
+		<rect x="100" y="10" height="10" width="10" fill="yellow" fill-opacity="0.5"></rect>
+		<rect x="110" y="10" height="10" width="10" fill="yellow" fill-opacity="0.8"></rect>
+		<text x="125" y="15" text-anchor="left" alignment-baseline="central">America</text>
+		<rect x="200" y="10" height="10" width="10" fill="green" fill-opacity="0.5"></rect>
+		<rect x="210" y="10" height="10" width="10" fill="green" fill-opacity="0.8"></rect>
+		<text x="225" y="15" text-anchor="left" alignment-baseline="central">Australia</text>
+		<rect x="300" y="10" height="10" width="10" fill="red" fill-opacity="0.5"></rect>
+		<rect x="310" y="10" height="10" width="10" fill="red" fill-opacity="0.8"></rect>
+		<text x="325" y="15" text-anchor="left" alignment-baseline="central">Asia</text>
+		<circle cx="400" cy="15" r="3" fill="grey" fill-opacity="0.5"></circle>
+		<circle cx="412" cy="15" r="6" fill="grey" fill-opacity="0.5"></circle>
+		<circle cx="430" cy="15" r="9" fill="grey" fill-opacity="0.5"></circle>
+		<text x="445" y="15" text-anchor="left" alignment-baseline="central">Country population</text>
+	</svg>
+  </div>
 </body>
 </html>

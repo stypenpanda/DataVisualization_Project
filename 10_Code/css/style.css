@@ -11,7 +11,7 @@ body {
   background-color: RGB(60,60,60);
   text-align: center;
   vertical-align: middle;
-  height: 80px;
+  height: 70px;
   margin: 0px;
   padding: 1px;
     }
@@ -32,7 +32,14 @@ a {
   font-size: 1.2em;
   }
 
+
+  
 /*D3 part */
+.legend rect {
+  fill: white;
+  stroke: black;
+  opacity: 0.8;}
+
 .axis path, .axis line {
   fill: black;
   stroke: black;
@@ -40,8 +47,30 @@ a {
   shape-rendering: crispEdges;
 }
 
+.circle{
+	opacity: 0.5;
+}
+
+.selected-circle{
+	opacity: 0.8;
+}
+
 .axis text {
   font-size: 0.8em
+}
+
+.mouseover_text {
+	font-family: sans-serif;
+	font-size: 10px;
+	fill: black;
+}
+
+/*Bars*/
+.bar{
+	opacity: 0.5
+}
+.selected-bar{
+	opacity: 0.8;
 }
 
 .bar2{
@@ -49,12 +78,6 @@ a {
 }
 .selected-bar2{
 	fill: green;
-}
-
-.mouseover_text {
-	font-family: sans-serif;
-	font-size: 10px;
-	fill: black;
 }
 
 /*Map related*/
@@ -72,6 +95,7 @@ a {
 .selected-flow{
 	stroke: green;
 }
+
 /*Slider intro*/
 #div3{
   font-size: 1.2em;
@@ -152,4 +176,8 @@ a {
     left: -.25em;
     margin-left: 0;
     margin-bottom: -.6em;      
+}
+
+#div4 {
+	font-size: 0.8em;
 }

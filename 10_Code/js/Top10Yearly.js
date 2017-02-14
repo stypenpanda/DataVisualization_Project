@@ -1,11 +1,3 @@
-//Generate dropdown list
-var select = '';
-for (i=1980;i<=2013;i++){
-	select += '<option val=' + i + '>' + i + '</option>';
-}
-$('#year_selector').html(select);
-//TODO: Think about a slider instead ...
-
 ////////////////////////////////////////////////////////////////////////////////////////////////
 //1 - The following is for the bar chart////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////////////////////
@@ -60,28 +52,42 @@ function render(data){
 	//enter
 	bars.enter().append("rect")
 		.attr("height", yScale.rangeBand())
-		.attr("class", "bar")
+		.attr("class", "bar2")
 		.on("mouseover", function(){
-			d3.select(this).classed("selected-bar", true);
+			var sel = d3.select(this)
+			sel.classed("selected-bar2", true);
 			var cId = d3.select(this).attr("id");
+			var migration = sel.attr("migration");
+			var hT = sel.attr("height");
+			var xT = +sel.attr("width") + margin.left + 20;
+			var yT = +sel.attr("y") + margin.top + hT/2;
 			svgGeo.select("#" + cId + "1")
 					.classed("selected-flow", true)
 					.attr("marker-end", "url(#arrowhead-selected)");
-			//var selStroke = svgGeo.select()
+			//Display migration number
+			svg.append("text")
+				.text(d3.format("s")(migration))
+				.attr("class", "mouseover_text")
+				.attr("x", xT)
+				.attr("y", yT)
+				.attr("alignment-baseline", "central");
 		})
 	.on("mouseout", function(){
-		d3.select(this).classed("selected-bar", false);
+		d3.select(this).classed("selected-bar2", false);
 		var cId = d3.select(this).attr("id");
 		svgGeo.select("#" + cId + "1")
 				.classed("selected-flow", false)
 				.attr("marker-end", "url(#arrowhead)");
+		//Delete migration number
+		svg.selectAll(".mouseover_text").remove();
 	});
 //update
 	bars
 		.attr("x", 0)
 		.attr("y",     function (d){ return yScale(d[yColumn]); })
 		.attr("width", function (d){ return xScale(d[xColumn]); })
-		.attr("id", function (d){return d["ID"]});
+		.attr("id", function (d){return d["ID"]})
+		.attr("migration", function (d){return d[xColumn];});
 	//exit
 	bars.exit().remove();
 }
@@ -125,7 +131,7 @@ svgGeo.append("defs").append("marker")
     .attr("orient", "auto")
     .append("path")
     .attr("d", "M 0,0 V 2 L3,1 Z")
-	.attr("fill", "red");
+	.attr("fill", "green");
 
 //Mapping to the SVG
 var projection = d3.geo.mercator()
@@ -203,8 +209,7 @@ function renderArrows(data){
 ////////////////////////////////////////////////////////////////////////////////////////////////	
 // 3 - General things happpening ///////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////////////////////
-var dropdown = document.getElementById("year_selector");
-var a = +dropdown.options[dropdown.selectedIndex].value;
+var a = 1980;
 var dMigPerCtry, dCurrentSelection;
 
 
@@ -230,15 +235,17 @@ drawWorldMap("world_countries.json", function(d){
 		})
 	});
 
-
-
-//Update graph when dropdown changes due to changes in selected data
-d3.select('#year_selector')
-  .on('change', function() {
-    a = +eval(d3.select(this).property('value'));
-    dCurrentSelection = dMigPerCtry.filter(function(data){
-			return  data["Year"] === a;
-			});
-	render(dCurrentSelection);
-	renderArrows(dCurrentSelection);
-	});
+	
+d3.select('#div3').call(d3.slider()
+			.axis(true)
+			.min(1980).max(2013).step(1)
+			.on("slide", function(evt, value) {
+				a = +value;
+				dCurrentSelection = dMigPerCtry.filter(function(data){
+						return  data["Year"] === a;
+						});
+				render(dCurrentSelection);
+				renderArrows(dCurrentSelection);
+				d3.select('#sliderText').text(value);
+								})
+								);
