@@ -1,1 +1,0 @@
-d3.slider().axis(true).min(1980).max(2013).step(1);
