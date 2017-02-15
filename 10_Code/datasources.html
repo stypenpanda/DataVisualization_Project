@@ -1,0 +1,55 @@
+x<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Global migration flows</title>
+  <link rel="stylesheet" href="css/style.css">  
+</head>
+
+<body>
+  <div id="div1">
+    <h1>Global migration flows between 1980 and 2013</h1>
+  </div>
+  <div id="div2">
+  <ul>
+      <li><a href="index.html">Intro</a></li>
+      <li><a href="migOfCountries.html">Migration of countries</a></li>
+      <li><a href="Top10Yearly.html">Top 10 yearly migration flows</a></li>
+      <li><a href="dataSources.html">Data sources</a></li>
+    </ul>
+  </div>
+  <div id="div5">
+	The data used for this project are originating from many different sources which are described here.
+	
+	<h2>Migration data</h2>
+	The migration data is from the UN and its report <a id="main" href="http://www.un.org/en/development/desa/population/migration/data/empirical2/migrationflows.shtml">International migration flows to and from selected countries<a>: The 2015 revision</a>.<br>
+	The aggregated country data can be found <a id="main" href="http://www.un.org/en/development/desa/population/migration/data/empirical2/data/UN_MigFlow_Totals.xlsx">here</a>. The migration flows between country is based on <a id="main" href="http://www.un.org/en/development/desa/population/migration/data/empirical2/data/UN_MigFlow_All_CountryFiles.zip">this data</a>.
+
+	In many cases there have been many data points per country and year. This resulted in the following rule set of selecting the country data:<br><br>
+	Coverage (foreigners vs. citizens vs both)
+	<ul id="lists">
+		<li id="i">In general both have been selected</li>
+		<li id="i">For Canada, US & New Zealand <i>both</i> is not availabe, <i>foreigners</i> selected</li>
+	</ul>
+	Criteria (Citizenship vs. place of birth vs. residence)
+	<ul id="lists">
+		<li id="i">For most countries only the criteria <i>residence</i> was left after selecting <i>both</i> as coverage</li>
+		<li id="i">For France <i>citizenship</i> and <i>residence</i> have been left but only residence had data for immigrants and emigrants therefore his has been selected</li>
+		<li id="i">The US have only data for the criteria <i>place of birth</i></li>
+		<li id="i">Canada has only data for the criteria <i>citizenship</i></li>
+		<li id="i">For New Zealand <i>residence</i> has been selected</li>
+	</ul>
+
+	For more details about the selection criteria and where the respective data is coming from, please have a look in the <a id="main" href="http://www.un.org/en/development/desa/population/migration/data/empirical2/docs/migflows2015documentation.pdf">documentation from the UN</a>.
+
+	<h2>Population data</h2>
+	The population data was taken from the <a id="main" href="http://data.worldbank.org/indicator/SP.POP.TOTL">worldbank</a>.
+
+	<h2>Countries and continents</h2>
+	The allocation of countries to continents is based on <a id="main" href="https://www.worlddata.info/downloads/">worlddata.info</a>.
+
+	<h2>Centroids of countries</h2>
+	The centroids of the countries which have been used to draw the arrows in the map are coming from <a id="main" href="http://gothos.info/2009/02/centroids-for-countries/">gothos.info</a>.
+</div>
+</body>
+</html>

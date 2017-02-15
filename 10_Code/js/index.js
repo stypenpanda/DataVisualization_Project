@@ -384,6 +384,7 @@ function type(d){
 d3.csv("BubbleChart.csv", type, function(d) {
 	//Filter for respective year
 	dMigPerCtry = d;
+	console.log(dMigPerCtry);
 	dCurrentSelection = d.filter(function(data){
 		return  data["Year"] === a;
 		});

@@ -4,8 +4,6 @@
   <meta charset="UTF-8">
   <title>Global migration flows</title>
   <link rel="stylesheet" href="css/style.css">  
-  <script src='http://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js'></script>	<!--D3-->
-  <script src='js/d3.slider.js'></script>
 </head>
 
 <body>
@@ -14,36 +12,37 @@
   </div>
   <div id="div2">
   <ul>
-      <li><a href="#">Intro</a></li>
-      <li><a href="index.html">Migration of countries</a></li>
+      <li><a href="index.html">Intro</a></li>
+      <li><a href="migOfCountries.html">Migration of countries</a></li>
       <li><a href="Top10Yearly.html">Top 10 yearly migration flows</a></li>
-      <li><a href="#">Explanations</a></li>
+      <li><a href="dataSources.html">Data sources</a></li>
     </ul>
   </div>
-  <div id="div3">
-  </div>
-  <script src="http://www.google.com/jsapi" type="text/javascript"></script>		<!--Google Api for json-->
-  <script type="text/javascript">google.load("jquery", "1.3.2");</script>			<!--Google Api for jquery-->
-  <script src="js/Index.js"></script>
-  <div id="div4" style="text-align:center;">
-	<svg width="575" height="30">
-		<rect x="0" y="10" height="10" width="10" fill="blue" fill-opacity="0.5"></rect>
-		<rect x="10" y="10" height="10" width="10" fill="blue" fill-opacity="0.8"></rect>
-		<text x="25" y="15" text-anchor="left" alignment-baseline="central">Europe</text>
-		<rect x="100" y="10" height="10" width="10" fill="yellow" fill-opacity="0.5"></rect>
-		<rect x="110" y="10" height="10" width="10" fill="yellow" fill-opacity="0.8"></rect>
-		<text x="125" y="15" text-anchor="left" alignment-baseline="central">America</text>
-		<rect x="200" y="10" height="10" width="10" fill="green" fill-opacity="0.5"></rect>
-		<rect x="210" y="10" height="10" width="10" fill="green" fill-opacity="0.8"></rect>
-		<text x="225" y="15" text-anchor="left" alignment-baseline="central">Australia</text>
-		<rect x="300" y="10" height="10" width="10" fill="red" fill-opacity="0.5"></rect>
-		<rect x="310" y="10" height="10" width="10" fill="red" fill-opacity="0.8"></rect>
-		<text x="325" y="15" text-anchor="left" alignment-baseline="central">Asia</text>
-		<circle cx="400" cy="15" r="3" fill="grey" fill-opacity="0.5"></circle>
-		<circle cx="412" cy="15" r="6" fill="grey" fill-opacity="0.5"></circle>
-		<circle cx="430" cy="15" r="9" fill="grey" fill-opacity="0.5"></circle>
-		<text x="445" y="15" text-anchor="left" alignment-baseline="central">Country population</text>
-	</svg>
+  <div id="div5">
+  <h3>Introduction</h3>
+  In today's times a lot is being discussed about migration. Many people have the feeling that there is more migration than there has been in the past.<br>
+  But often these discussions are not based on actual data. Even though the UN provides data about global migration flows, they do not provide them in a human-consumable way.
+  Rather these files are pure data walls which make people rather hesitant to have a look at them. <br><br>
+  For sure, these visualitions cannot answer all questions and they also limited by the data provided like the following:
+  <ul id="lists">
+	<li id="i">Many countries, including the US, do not seem to publish emigration data</li>
+	<li id="i">There are years where only for a selection of the countries data is available</li>
+	<li id="i">Data from African or Southamerican countries is totally missing</li>
+  </ul>
+  But they give you a start to get a feeling how the migration has changed in the past.
+  <h3>Questions you might get answered</h3>
+  Within <b>Migration of countries</b> you could answer questions like:
+   <ul  id="lists">
+	<li id="i">Which countries had the most immigrants or emigrants in the respective year?</li>
+	<li id="i">How did this change over the years?</li>
+	<li id="i">Is this specific country rather an immigration or an emigration country?</li>
+  </ul>
+  Within <b>Top yearly migration flows</b> start trying to find answers to the following questions:
+   <ul  id="lists">
+	<li id="i">In which year did we have the strongest migration from one country to another?</li>
+	<li id="i">Have there been years when one country has been the migration target of many people from many different countries?</li>
+	<li id="i">Are the main geographical migration flows changing over time?</li>
+  </ul>
   </div>
 </body>
 </html>
