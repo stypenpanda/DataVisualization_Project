@@ -28,7 +28,7 @@ var svg2 = d3.select("body").append("svg")
 	.attr("height", outerHeight2);
 
 svg2.append("text")
-	.text("# of immigrants " + a.toString())
+	.text("Immigration (" + a.toString() + ")")
 	.style("text-anchor", "middle")
 	.attr("id", "bar1Title")
 	.attr("x", outerWidth2 / 2)
@@ -59,7 +59,7 @@ var xAxisLabel2 = xAxisG2.append("text")
 	.attr("x", innerWidth2 / 2)
 	.attr("y", 40)
 	.attr("class", "label")
-	.text("# of immigrants");			
+	.text("No. of immigrants");			
 
 
 function renderImmigration(data){
@@ -143,22 +143,16 @@ var svg = d3.select("body").append("svg")
 
 //Add title
 svg.append("text")
-	.text("# of emigrants (x-axis) vs. # of immigrants")
+	.text("Immigration vs. Emigration (" + a.toString() + ")")
 	.style("text-anchor", "middle")
 	.attr("x", outerWidth/2 + margin.left - margin.right)
 	.attr("y", 20)
 	.attr("font-weight", "bold");
 svg.append("text")
-	.text("(y-axis) in selected year")
-	.style("text-anchor", "middle")
-	.attr("x", outerWidth/2 + margin.left - margin.right)
-	.attr("y", 35)
-	.attr("font-weight", "bold");
-svg.append("text")
 	.text("[only countries with stats on immigrants and emigrants in this year]")
 	.style("text-anchor", "middle")
 	.attr("x", outerWidth/2 + margin.left - margin.right)
-	.attr("y", 50)
+	.attr("y", 35)
 	.attr("font-size", "0.7em");
 
 
@@ -175,14 +169,14 @@ var xAxisLabel = xAxisG.append("text")
 	.attr("x", innerWidth / 2)
 	.attr("y", 40)
 	.attr("class", "label")
-	.text("# of emigrants [sqrt-scale]");	
+	.text("No. of emigrants");	
 	
 var yAxisLabel = yAxisG.append("text")
 	.style("text-anchor", "middle")
 	.attr("x", -(innerHeight / 2))
 	.attr("y", -50)
 	.attr("class", "label")
-	.text("# of immigrants [sqrt-scale]")
+	.text("No. of immigrants")
 	.attr("transform", "rotate(-90)");		
 	
 var xScale = d3.scale.sqrt().range([0, innerWidth]);
@@ -270,7 +264,7 @@ var svg3 = d3.select("body").append("svg")
 	.attr("height", outerHeight2);
 
 svg3.append("text")
-	.text("# of emigrants " + a.toString())
+	.text("Emigration (" + a.toString() + ")")
 	.attr("id", "bar2Title")
 	.style("text-anchor", "middle")
 	.attr("x", outerWidth3 / 2)
