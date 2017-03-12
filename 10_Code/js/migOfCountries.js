@@ -9,7 +9,7 @@ var maxMigration, maxPopulation;
 //Colors continent:
 colCon = {	"Australia": "green", "Europe": "blue",
 "Asia": "red", "North America": "yellow"}
-	
+
 
 ////////////////////////////////////////////////////////////////////////////////////////////////
 //1 - The following is for the first bar chart////////////////////////////////////////////////////////
@@ -34,10 +34,10 @@ svg2.append("text")
 	.attr("x", outerWidth2 / 2)
 	.attr("y", 20)
 	.attr("font-weight", "bold");
-	
+
 var g2 = svg2.append("g")
 	.attr("transform", "translate(" + margin2.left + "," + margin2.top + ")");
-	
+
 var xAxisG2 = g2.append("g")
 	.attr("class", "x axis")
 	.attr("transform", "translate(0," + innerHeight2 + ")");
@@ -59,7 +59,7 @@ var xAxisLabel2 = xAxisG2.append("text")
 	.attr("x", innerWidth2 / 2)
 	.attr("y", 40)
 	.attr("class", "label")
-	.text("No. of immigrants");			
+	.text("No. of immigrants");
 
 
 function renderImmigration(data){
@@ -68,7 +68,7 @@ function renderImmigration(data){
   yScale2.domain(data.map( function (d){ return d["Country"]; }));
   xAxisG2.call(xAxis2);
   yAxisG2.call(yAxis2);
-  
+
   //bind data
   var bars = g2.selectAll("rect").data(data);
   //enter
@@ -145,6 +145,7 @@ var svg = d3.select("body").append("svg")
 svg.append("text")
 	.text("Immigration vs. Emigration (" + a.toString() + ")")
 	.style("text-anchor", "middle")
+	.attr("id", "bubbleTitle")
 	.attr("x", outerWidth/2 + margin.left - margin.right)
 	.attr("y", 20)
 	.attr("font-weight", "bold");
@@ -169,16 +170,16 @@ var xAxisLabel = xAxisG.append("text")
 	.attr("x", innerWidth / 2)
 	.attr("y", 40)
 	.attr("class", "label")
-	.text("No. of emigrants");	
-	
+	.text("No. of emigrants");
+
 var yAxisLabel = yAxisG.append("text")
 	.style("text-anchor", "middle")
 	.attr("x", -(innerHeight / 2))
 	.attr("y", -50)
 	.attr("class", "label")
 	.text("No. of immigrants")
-	.attr("transform", "rotate(-90)");		
-	
+	.attr("transform", "rotate(-90)");
+
 var xScale = d3.scale.sqrt().range([0, innerWidth]);
 var yScale = d3.scale.sqrt().range([innerHeight, 0]);
 var circleScale = d3.scale.sqrt().range([0, 30]);
@@ -225,7 +226,7 @@ function render(data){
 	})
 	.on("mouseout", function(){
 		var sel = d3.select(this);
-		var ctryName = sel.attr("country");	
+		var ctryName = sel.attr("country");
 		sel.classed("selected-circle", false);
 		svg.selectAll(".mouseover_text").remove();
 		//The first bar chart
@@ -270,10 +271,10 @@ svg3.append("text")
 	.attr("x", outerWidth3 / 2)
 	.attr("y", 20)
 	.attr("font-weight", "bold");
-	
+
 var g3 = svg3.append("g")
 	.attr("transform", "translate(" + margin3.left + "," + margin3.top + ")");
-	
+
 var xAxisG3 = g3.append("g")
 	.attr("class", "x axis")
 	.attr("transform", "translate(0," + innerHeight3 + ")");
@@ -295,7 +296,7 @@ var xAxisLabel3 = xAxisG3.append("text")
 	.attr("x", innerWidth2 / 2 + 40)
 	.attr("y", 40)
 	.attr("class", "label")
-	.text("# of emigrants");			
+	.text("# of emigrants");
 
 
 function renderEmigration(data){
@@ -304,7 +305,7 @@ function renderEmigration(data){
   yScale3.domain(data.map( function (d){ return d["Country"]; }));
   xAxisG3.call(xAxis3);
   yAxisG3.call(yAxis3);
-  
+
   //bind data
   var bars2 = g3.selectAll("rect").data(data);
   //enter
@@ -361,7 +362,7 @@ function renderEmigration(data){
 	bars2.exit().remove();
 }
 
-////////////////////////////////////////////////////////////////////////////////////////////////	
+////////////////////////////////////////////////////////////////////////////////////////////////
 // 4 - General things happpening ///////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////////////////////
 var dMigPerCtry, dCurrentSelection;
@@ -431,8 +432,8 @@ d3.select('#div3').call(d3.slider()
 				renderImmigration(dCurSelImmigrants);
 				render(dCurBubble);
 				renderEmigration(dCurSelEmigrants);
-			d3.select("#bar1Title").text("# of immigrants " + a.toString());
-			d3.select("#bar2Title").text("# of emigrants " + a.toString());
-			d3.select("#bubbleTitle").text("# of immigrants " + a.toString());
+			d3.select("#bar1Title").text("Immigration (" + a.toString() + ")");
+			d3.select("#bar2Title").text("Emigration (" + a.toString() + ")");
+			d3.select("#bubbleTitle").text("Immigration vs. Emigration (" + a.toString() + ")");
 					})
 					);

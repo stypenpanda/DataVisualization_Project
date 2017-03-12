@@ -31,12 +31,12 @@ a {
   color: white;
   font-size: 1.2em;
   }
-#i{
+.i{
   display: list-item;
   padding: 0px 10px 0px 10px;
 }
 
-  
+
 /*D3 part */
 .legend rect {
   fill: white;
@@ -80,7 +80,7 @@ a {
 	fill: RGBA(150,150,150,.5);
 }
 .selected-bar2{
-	fill: green;
+	fill: green !important;
 }
 
 /*Map related*/
@@ -96,7 +96,7 @@ a {
 	stroke: black;
 }
 .selected-flow{
-	stroke: green;
+	stroke: green !important;
 }
 
 /*Slider intro*/
@@ -120,12 +120,12 @@ a {
 
 .d3-slider-horizontal {
     height: .8em;
-}  
+}
 
 .d3-slider-vertical {
     width: .8em;
     height: 100px;
-}      
+}
 
 .d3-slider-handle {
     position: absolute;
@@ -149,7 +149,7 @@ a {
 
 .d3-slider-axis {
     position: relative;
-    z-index: 1;    
+    z-index: 1;
 }
 
 .d3-slider-axis-bottom {
@@ -178,15 +178,19 @@ a {
 .d3-slider-vertical .d3-slider-handle {
     left: -.25em;
     margin-left: 0;
-    margin-bottom: -.6em;      
+    margin-bottom: -.6em;
 }
 
 #div4 {
 	font-size: 0.8em;
 }
 
-h3 {
+h3, h4, h5 {
 	text-align: center;
+}
+h4, h5 {
+  margin-top: 2px;
+  margin-bottom: 2px;
 }
 
 #div5 {
@@ -197,7 +201,7 @@ h3 {
 	text-align: left;
 }
 /*Some style for the intro and the impressum*/
-#lists {
+.lists {
 	text-align: left;
 	margin-left: 60px;
 }
@@ -205,3 +209,15 @@ h3 {
   color: black;
   font-size: 1em;
   }
+
+/*Some style for the findings in the intro*/
+.mig1992 {
+  fill: rgba(20,20,20,.8 );
+}
+#div1992TopMig, #divLatestMig{
+  text-align: center;
+}
+
+#mainLegend text {
+	font-size: 0.8em;
+}

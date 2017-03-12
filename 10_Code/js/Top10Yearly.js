@@ -18,8 +18,8 @@ var oFlowLat = "oLat",
 	dFlowLat = "dLat",
 	dFlowLong = "dLong";
 
-	
-var svg = d3.select("body").append("svg")
+
+var svg = d3.select("#div4").append("svg")
 	.attr("width",  outerWidth)
 	.attr("height", outerHeight);
 var g = svg.append("g")
@@ -92,12 +92,12 @@ function render(data){
 	bars.exit().remove();
 }
 
-////////////////////////////////////////////////////////////////////////////////////////////////	
+////////////////////////////////////////////////////////////////////////////////////////////////
 // 2 - Map related /////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////////////////////
 
 //Preperation happening
-var outerWidthGeo = 800;
+var outerWidthGeo = 850;
 var outerHeightGeo = 400;
 var marginGeo = { left: 200, top: 0, right: 5, bottom: 30 };
 var l2OffsetDistance = 30;
@@ -107,7 +107,7 @@ var scaleStrokeWidth = d3.scale.linear().domain([0, 1000*1000])
 var innerWidthGeo  = outerWidthGeo  - marginGeo.left - marginGeo.right;
 var innerHeightGeo = outerHeightGeo - marginGeo.top  - marginGeo.bottom;
 
-var svgGeo = d3.select("body").append("svg")
+var svgGeo = d3.select("#div4").append("svg")
 	.attr("width",  outerWidthGeo)
 	.attr("height", outerHeightGeo);
 
@@ -135,14 +135,15 @@ svgGeo.append("defs").append("marker")
 
 //Mapping to the SVG
 var projection = d3.geo.mercator()
-				   .scale(100)
+				   .scale(120)
 				   .translate([innerWidthGeo / 2, innerHeightGeo / 1.2])
 				   .center([0,-30]);
 var path = d3.geo.path().projection(projection);
 
 
 //Add the world map
-function drawWorldMap(jsonName, callback){
+function drawWorldMap(jsonName)
+	{
 	d3.json(jsonName, function(json) {
 	svgGeo.selectAll(".country")
 		.data(json.features)
@@ -174,7 +175,6 @@ function drawWorldMap(jsonName, callback){
 			svgGeo.select("text").remove();
 		});
 		});
-	callback()
 }
 
 function renderArrows(data){
@@ -206,7 +206,7 @@ function renderArrows(data){
 	flows.exit().remove();
 }
 
-////////////////////////////////////////////////////////////////////////////////////////////////	
+////////////////////////////////////////////////////////////////////////////////////////////////
 // 3 - General things happpening ///////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////////////////////
 var a = 1980;
@@ -220,7 +220,8 @@ function type(d){
 	}
 
 //Load initial data
-drawWorldMap("world_countries.json", function(d){
+drawWorldMap("world_countries.json")
+$(document).ready(function(){
 		d3.csv("MigrationPerCountry_Top10_v04.csv", type, function(d) {
 			//Filter for respective year
 			dMigPerCtry = d;
@@ -235,7 +236,6 @@ drawWorldMap("world_countries.json", function(d){
 		})
 	});
 
-	
 d3.select('#div3').call(d3.slider()
 			.axis(true)
 			.min(1980).max(2013).step(1)

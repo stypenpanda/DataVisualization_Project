@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Global migration flows</title>
-  <link rel="stylesheet" href="css/style.css">  
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -24,25 +24,69 @@
   But often these discussions are not based on actual data. Even though the UN provides data about global migration flows, they do not provide them in a human-consumable way.
   Rather these files are pure data walls which make people rather hesitant to have a look at them. <br><br>
   For sure, these visualitions cannot answer all questions and they also limited by the data provided like the following:
-  <ul id="lists">
-	<li id="i">Many countries, including the US, do not seem to publish emigration data</li>
-	<li id="i">There are years where only for a selection of the countries data is available</li>
-	<li id="i">Data from African or Southamerican countries is totally missing</li>
+  <ul  class="lists">
+	<li class="i">Many countries, including the US, do not seem to publish emigration data</li>
+	<li class="i">There are years where only for a selection of the countries data is available</li>
+	<li class="i">Data from African or Southamerican countries is totally missing</li>
   </ul>
   But they give you a start to get a feeling how the migration has changed in the past.
-  <h3>Questions you might get answered</h3>
+  <h3>Some findings</h3>
+  When exploring the data, the first thing I have been looking for has been the most recent data available. Mainly the discussions have been about the topic if countries like France or Germany are immigration countries and how the ratio looks like for other countries.<br>
+  The most recent year available in the UN data has been 2013 for which mainly data of European countries has been available. And most of these countries do actually have more immigrants than emigrants as you can see in the graph below.<br><br>
+  <div id="divLatestMig">
+    <h4>While most European countries have been rather immigration than emigration countries in 2013,<br>for countries like Spain, Poland and Romania it is opposite probably driven by economic reasons</h4>
+    <span id="spanLatestMig">
+    </span>
+    <span id="mainLegend">
+      <svg width="150" height="450">
+        <rect x="0" y="50" height="10" width="10" fill="blue" fill-opacity="0.5"></rect>
+        <rect x="10" y="50" height="10" width="10" fill="blue" fill-opacity="0.8"></rect>
+        <text x="25" y="55" text-anchor="left" alignment-baseline="central">Europe</text>
+        <rect x="0" y="80" height="10" width="10" fill="green" fill-opacity="0.5"></rect>
+        <rect x="10" y="80" height="10" width="10" fill="green" fill-opacity="0.8"></rect>
+        <text x="25" y="85" text-anchor="left" alignment-baseline="central">Australia</text>
+        <rect x="0" y="110" height="10" width="10" fill="red" fill-opacity="0.5"></rect>
+        <rect x="10" y="110" height="10" width="10" fill="red" fill-opacity="0.8"></rect>
+        <text x="25" y="115" text-anchor="left" alignment-baseline="central">Asia</text>
+        <circle cx="10" cy="140" r="3" fill="grey" fill-opacity="0.5"></circle>
+        <circle cx="10" cy="153" r="6" fill="grey" fill-opacity="0.5"></circle>
+        <circle cx="10" cy="173" r="9" fill="grey" fill-opacity="0.5"></circle>
+        <text x="25" y="150" text-anchor="left" alignment-baseline="central">Country</text>
+        <text x="25" y="165" text-anchor="left" alignment-baseline="central">population</text>
+      </svg>
+    </span>
+  </div>
+  Besides the obsevervation that many of the big countries like Germany, UK and Italy have more immigrants, it has also not been surprising that Spain, Poland, Romania, Greece and Portugal had more emigrants. This reflects the news where one can hear a lot about people from these countries looking for jobs in (mainly) other European countries.<br>
+  But there have been some things I found surprising and which can also be read from this graph:
+  <ul  class="lists">
+  <li class="i">France has almost as many emigrants as immigrants which is suprising as France is also always seen as an immigration country</li>
+  <li class="i">The Slovak Rebublic has less imigrants and emigrants than much smaller countries like Iceland, Malta and Luxembourg.</li>
+  </ul>
+  But not only the most recent data is very interesting but also how major historic events triggered migration between countries. One of these events has been for sure the disintegration of the Soviet Union in the end of 1991. I would have expected that mainly people would have the former states of the USSR and would have moved to other countries. But this is only part of the truth as one can see in the following figure.<br><br>
+  <div id="div1992TopMig">
+    <h4>The disintegration of the Soviet Union and its allies can clearly be seen in the migration flows 1992</h4>
+    <h5>Seven of the top ten global migration flows have been to or from affected countries</h5>
+  </div>
+  There have not only been movements out of these states as expected but also a lot of movements from the former USSR states Ukraine, Kazakhstan and Uzbekistan to Russia. One reason could be that many Russians have been living in these states before and wanted to go back home now. That there have been many people moving from Russia and Kazahkhstan to Germany is related to the fact that people of German origin who lived in the former USSR had the right to apply for a passport in Germany. <br>
+  But also the migration flows out of Romania and Poland - two former members of the Warsaw pact - to Germany are probably related to the end of the Soviet Union.<br>
+  Besides this, the other 3 of the top 10 migration flows of that year (Mexico-US, Turkey-Germany and Vietnam-US) are probably not related to this historic event.
+  <h3>Further questions you might get answered</h3>
   Within <b>Migration of countries</b> you could answer questions like:
-   <ul  id="lists">
-	<li id="i">Which countries had the most immigrants or emigrants in the respective year?</li>
-	<li id="i">How did this change over the years?</li>
-	<li id="i">Is this specific country rather an immigration or an emigration country?</li>
+   <ul  class="lists">
+	<li class="i">Which countries had the most immigrants or emigrants in the respective year?</li>
+	<li class="i">How did this change over the years?</li>
+	<li class="i">Is this specific country rather an immigration or an emigration country?</li>
   </ul>
   Within <b>Top yearly migration flows</b> start trying to find answers to the following questions:
-   <ul  id="lists">
-	<li id="i">In which year did we have the strongest migration from one country to another?</li>
-	<li id="i">Have there been years when one country has been the migration target of many people from many different countries?</li>
-	<li id="i">Are the main geographical migration flows changing over time?</li>
+   <ul  class="lists">
+	<li class="i">In which year did we have the strongest migration from one country to another?</li>
+	<li class="i">Have there been years when one country has been the migration target of many people from many different countries?</li>
+	<li class="i">Are the main geographical migration flows changing over time?</li>
   </ul>
   </div>
 </body>
+<script src='js/d3.min.js'></script>	<!--D3-->
+<script src="http://www.google.com/jsapi" type="text/javascript"></script>		<!--Google Api for json-->
+<script src="js/jquery.min.js"></script>
+<script src="js/index.js"></script>
 </html>
